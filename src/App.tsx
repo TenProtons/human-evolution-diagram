@@ -7,7 +7,6 @@ function App() {
   const { t, i18n } = useTranslation();
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Toggle theme
   React.useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add("theme-dark");
@@ -16,7 +15,6 @@ function App() {
     }
   }, [isDarkMode]);
 
-  // Toggle language
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "en" ? "uk" : "en");
   };

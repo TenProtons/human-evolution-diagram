@@ -1,20 +1,20 @@
 import { FC } from 'react';
-import { Handle, Position, NodeProps } from 'reactflow';
+import { Handle, NodeProps, Position } from 'reactflow';
+import { MyNodeData } from '../../models/common';
 import './Card.css';
-
-interface MyNodeData {
-  label: string;
-  description?: string;
-  imgUrl?: string;
-}
+import { useTranslation } from 'react-i18next';
 
 const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
+    const { t } = useTranslation();
+    
   return (
     <div className="card">
       {data.imgUrl && <img src={data.imgUrl} alt={data.label} className="card-image" />}
       <div className="card-content">
         <h4>{data.label}</h4>
-        <p>{data.description}</p>
+        <p><b>{ t('latin_name') }:</b> {data.latinName}</p>
+        <p><b>{ t('date_of_origin') }:</b> {data.dateOfOrigin}</p>
+        <p><b>{ t('who_did_it_come_from') }:</b> {data.whoDidItComeFrom}</p>
       </div>
 
       <Handle type="source" position={Position.Bottom} />

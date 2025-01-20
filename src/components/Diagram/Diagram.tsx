@@ -2,34 +2,23 @@
 
 import { FC, useCallback, useState } from 'react';
 import ReactFlow, {
-  ReactFlowProvider,
   addEdge,
-  applyNodeChanges,
   applyEdgeChanges,
-  Controls,
+  applyNodeChanges,
   Background,
-  Node,
+  Connection,
+  Controls,
   Edge,
-  NodeChange,
   EdgeChange,
-  Connection
+  Node,
+  NodeChange,
+  ReactFlowProvider
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 import { useTranslation } from 'react-i18next';
-import Card from '../Card/Card';  // <-- your custom node component
-
-// Describe the shape of the data each node holds:
-interface MyNodeData {
-  label: string;
-  description?: string;
-  imgUrl?: string;
-}
-
-// If you attach extra data to edges, define an interface for that, too:
-interface MyEdgeData {
-  label?: string;
-}
+import { MyEdgeData, MyNodeData } from '../../models/common';
+import Card from '../Card/Card'; // <-- your custom node component
 
 // Then specify your custom nodeTypes:
 const nodeTypes = {
@@ -47,9 +36,11 @@ const Diagram: FC = () => {
       type: 'card',
       position: { x: 100, y: 50 },
       data: {
-        label: t('australopithecus'),
-        description: 'Lived ~3-4 million years ago',
-        imgUrl: '/images/austrolopithecus.png',
+        label: t('chlca.title'),
+        latinName: t('chlca.latin_name'),
+        dateOfOrigin: t('chlca.date_of_origin'),
+        whoDidItComeFrom: t('chlca.who_did_it_come_from'),
+        imgUrl: './src/assets/img/chlca.jpg',
       }
     },
     {
@@ -58,7 +49,7 @@ const Diagram: FC = () => {
       position: { x: 100, y: 250 },
       data: {
         label: t('neanderthal'),
-        description: 'Neanderthal description here',
+        latinName: 'Neanderthal latinName here',
         imgUrl: '/images/neanderthal.png',
       }
     },
@@ -68,7 +59,7 @@ const Diagram: FC = () => {
       position: { x: 100, y: 450 },
       data: {
         label: t('sapiens'),
-        description: 'Modern humans',
+        latinName: 'Modern humans',
         imgUrl: '/images/sapiens.png',
       }
     },
@@ -77,8 +68,8 @@ const Diagram: FC = () => {
   // --- INITIAL EDGES ---
   // Again, use Edge<MyEdgeData>[] if you store extra data on edges.
   const initialEdges: Edge<MyEdgeData>[] = [
-    { id: 'e1-2', source: '1', target: '2', label: '300k years' },
-    { id: 'e2-3', source: '2', target: '3', label: '130k years' },
+    { id: 'e1-2', source: '1', target: '2' },
+    { id: 'e2-3', source: '2', target: '3' },
   ];
 
   // State for nodes & edges
