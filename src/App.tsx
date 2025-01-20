@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Diagram from './components/Diagram/Diagram'
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -32,7 +33,7 @@ function App() {
       <p>{t('subtitle')}</p>
 
       {/* Render the diagram */}
-      {/* <Diagram /> */}
+      <Diagram />
     </div>
   );
 }

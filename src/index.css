@@ -25,6 +25,11 @@
   --arrow-color: #fefefe;
 }
 
+* {
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -67,9 +72,56 @@ button:focus-visible {
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 725px;
+  margin: 0 auto;
+}
+
+.regular-button {
+  padding: var(--8) var(--16);
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid var(--active-link-color);
+  }
+
+  &:disabled {
+    background-color: var(--button-background-disabled);
+    color: var(--button-text-color-disabled);
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background-color: var(--button-background-hover);
+  }
+}
+
+label {
+  margin-bottom: var(--6);
+  color: var(--text-color);
+  font-size: 0.9em;
+  text-align: start;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -82,5 +134,36 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+/* Global Scrollbar Styles */
+
+/* For WebKit browsers */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--input-background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: var(--border-radius-4);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) var(--input-background);
+}
+
+/* For Edge and IE (limited support) */
+@supports (-ms-overflow-style: none) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) var(--input-background);
   }
 }
