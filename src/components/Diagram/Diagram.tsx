@@ -34,7 +34,7 @@ const Diagram: FC = () => {
     {
       id: '1',
       type: 'card',
-      position: { x: 100, y: 50 },
+      position: { x: 0, y: 50 },
       data: {
         id: '1',
         label: t('chlca.title'),
@@ -49,7 +49,7 @@ const Diagram: FC = () => {
     {
       id: '2',
       type: 'card',
-      position: { x: 100, y: 250 },
+      position: { x: -300, y: 650 },
       data: {
         label: t('chlca.title'),
         latinName: t('chlca.latin_name'),
@@ -63,7 +63,7 @@ const Diagram: FC = () => {
     {
       id: '3',
       type: 'card',
-      position: { x: 100, y: 450 },
+      position: { x: 300, y: 650 },
       data: {
         label: t('chlca.title'),
         latinName: t('chlca.latin_name'),
@@ -80,7 +80,7 @@ const Diagram: FC = () => {
   // Again, use Edge<MyEdgeData>[] if you store extra data on edges.
   const initialEdges: Edge<MyEdgeData>[] = [
     { id: 'e1-2', source: '1', target: '2' },
-    { id: 'e2-3', source: '2', target: '3' },
+    { id: 'e1-3', source: '1', target: '3' },
   ];
 
   // State for nodes & edges
@@ -112,6 +112,9 @@ const Diagram: FC = () => {
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
           fitView
+          fitViewOptions={{ padding: 0.1 }}
+          nodesDraggable={false}
+          nodesConnectable={false}
           style={{
             backgroundColor: 'var(--bg-color)',
             color: 'var(--text-color)',
