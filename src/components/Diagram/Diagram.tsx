@@ -36,10 +36,13 @@ const Diagram: FC = () => {
       type: 'card',
       position: { x: 100, y: 50 },
       data: {
+        id: '1',
         label: t('chlca.title'),
         latinName: t('chlca.latin_name'),
         dateOfOrigin: t('chlca.date_of_origin'),
         whoDidItComeFrom: t('chlca.who_did_it_come_from'),
+        whoAroseFromHim: t('chlca.who_arose_from_him'),
+        didHeComeOutOfAfrica: t('chlca.did_he_come_out_of_Africa'),
         imgUrl: './src/assets/img/chlca.jpg',
       }
     },
@@ -48,9 +51,13 @@ const Diagram: FC = () => {
       type: 'card',
       position: { x: 100, y: 250 },
       data: {
-        label: t('neanderthal'),
-        latinName: 'Neanderthal latinName here',
-        imgUrl: '/images/neanderthal.png',
+        label: t('chlca.title'),
+        latinName: t('chlca.latin_name'),
+        dateOfOrigin: t('chlca.date_of_origin'),
+        whoDidItComeFrom: t('chlca.who_did_it_come_from'),
+        whoAroseFromHim: t('chlca.who_arose_from_him'),
+        didHeComeOutOfAfrica: t('chlca.did_he_come_out_of_Africa'),
+        imgUrl: './src/assets/img/chlca.jpg',
       }
     },
     {
@@ -58,9 +65,13 @@ const Diagram: FC = () => {
       type: 'card',
       position: { x: 100, y: 450 },
       data: {
-        label: t('sapiens'),
-        latinName: 'Modern humans',
-        imgUrl: '/images/sapiens.png',
+        label: t('chlca.title'),
+        latinName: t('chlca.latin_name'),
+        dateOfOrigin: t('chlca.date_of_origin'),
+        whoDidItComeFrom: t('chlca.who_did_it_come_from'),
+        whoAroseFromHim: t('chlca.who_arose_from_him'),
+        didHeComeOutOfAfrica: t('chlca.did_he_come_out_of_Africa'),
+        imgUrl: './src/assets/img/chlca.jpg',
       }
     },
   ];
