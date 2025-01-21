@@ -27,7 +27,7 @@ const resources = {
   uk: {
     translation: {
       "title": "Еволюція Людини",
-      "subtitle": "Хронологія від Останнього спільнго предка між шимпанзе та людиною до Homo Sapiens",
+      "subtitle": "Хронологія від Останнього спільного предка між шимпанзе та людиною до Homo Sapiens",
       "australopithecus": "Австралопітек",
       "neanderthal": "Неандерталець",
       "sapiens": "Homo Sapiens",

@@ -10,6 +10,7 @@ import ReactFlow, {
   Controls,
   Edge,
   EdgeChange,
+  MarkerType,
   Node,
   NodeChange,
   ReactFlowProvider
@@ -49,7 +50,7 @@ const Diagram: FC = () => {
     {
       id: '2',
       type: 'card',
-      position: { x: -300, y: 650 },
+      position: { x: -300, y: 750 },
       data: {
         label: t('chlca.title'),
         latinName: t('chlca.latin_name'),
@@ -63,7 +64,7 @@ const Diagram: FC = () => {
     {
       id: '3',
       type: 'card',
-      position: { x: 300, y: 650 },
+      position: { x: 300, y: 750 },
       data: {
         label: t('chlca.title'),
         latinName: t('chlca.latin_name'),
@@ -79,8 +80,24 @@ const Diagram: FC = () => {
   // --- INITIAL EDGES ---
   // Again, use Edge<MyEdgeData>[] if you store extra data on edges.
   const initialEdges: Edge<MyEdgeData>[] = [
-    { id: 'e1-2', source: '1', target: '2' },
-    { id: 'e1-3', source: '1', target: '3' },
+    { 
+      id: 'e1-2', 
+      source: '1', 
+      target: '2',
+      markerEnd: {
+        type: MarkerType.ArrowClosed,
+      },
+      style: { strokeWidth: 4 },
+    },
+    { 
+      id: 'e1-3', 
+      source: '1', 
+      target: '3',
+      markerEnd: {
+        type: MarkerType.ArrowClosed,
+      },
+      style: { strokeWidth: 4 },
+    },
   ];
 
   // State for nodes & edges
@@ -112,7 +129,6 @@ const Diagram: FC = () => {
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
           fitView
-          fitViewOptions={{ padding: 0.1 }}
           nodesDraggable={false}
           nodesConnectable={false}
           style={{
