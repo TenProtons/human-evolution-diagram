@@ -47,14 +47,14 @@
   --border-radius-8: 8px;
   --bg-color: #fefefe;
   --text-color: #212121;
-  --card-bg-color: #ffffff;
+  --card-bg-color: #bcdad3;
   --arrow-color: #333333;
 }
 
 .theme-dark {
   --bg-color: #212121;
   --text-color: #f0f0f0;
-  --card-bg-color: #333333;
+  --card-bg-color: #30363a;
   --arrow-color: #fefefe;
 }
 
