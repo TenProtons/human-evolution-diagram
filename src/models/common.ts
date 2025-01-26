@@ -1,4 +1,5 @@
 export interface MyNodeData {
+  index?: number;
   id?: string;
   label: string;
   latinName: string;

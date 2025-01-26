@@ -1,6 +1,4 @@
-// Diagram.tsx
-
-import { FC, useCallback, useState } from 'react';
+import { FC, useCallback, useEffect, useState } from 'react';
 import ReactFlow, {
   addEdge,
   applyEdgeChanges,
@@ -18,10 +16,11 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 
 import { useTranslation } from 'react-i18next';
+import { cardsData } from '../../data/cards';
 import { MyEdgeData, MyNodeData } from '../../models/common';
-import Card from '../Card/Card'; // <-- your custom node component
+import Card from '../Card/Card';
+import { TFunction } from 'i18next';
 
-// Then specify your custom nodeTypes:
 const nodeTypes = {
   card: Card,
 };
@@ -29,54 +28,27 @@ const nodeTypes = {
 const Diagram: FC = () => {
   const { t } = useTranslation();
 
-  // --- INITIAL NODES ---
-  // We specify Node<MyNodeData>[] so TypeScript knows how these nodes are shaped.
-  const initialNodes: Node<MyNodeData>[] = [
-    {
-      id: '1',
-      type: 'card',
-      position: { x: 0, y: 50 },
-      data: {
-        id: '1',
-        label: t('chlca.title'),
-        latinName: t('chlca.latin_name'),
-        dateOfOrigin: t('chlca.date_of_origin'),
-        whoDidItComeFrom: t('chlca.who_did_it_come_from'),
-        whoAroseFromHim: t('chlca.who_arose_from_him'),
-        didHeComeOutOfAfrica: t('chlca.did_he_come_out_of_Africa'),
-        imgUrl: './src/assets/img/chlca.jpg',
-      }
-    },
-    {
-      id: '2',
-      type: 'card',
-      position: { x: -300, y: 750 },
-      data: {
-        label: t('chlca.title'),
-        latinName: t('chlca.latin_name'),
-        dateOfOrigin: t('chlca.date_of_origin'),
-        whoDidItComeFrom: t('chlca.who_did_it_come_from'),
-        whoAroseFromHim: t('chlca.who_arose_from_him'),
-        didHeComeOutOfAfrica: t('chlca.did_he_come_out_of_Africa'),
-        imgUrl: './src/assets/img/chlca.jpg',
-      }
-    },
-    {
-      id: '3',
-      type: 'card',
-      position: { x: 300, y: 750 },
-      data: {
-        label: t('chlca.title'),
-        latinName: t('chlca.latin_name'),
-        dateOfOrigin: t('chlca.date_of_origin'),
-        whoDidItComeFrom: t('chlca.who_did_it_come_from'),
-        whoAroseFromHim: t('chlca.who_arose_from_him'),
-        didHeComeOutOfAfrica: t('chlca.did_he_come_out_of_Africa'),
-        imgUrl: './src/assets/img/chlca.jpg',
-      }
-    },
-  ];
+  useEffect(() => {
+    setNodes(buildNodes(t));
+  }, [t]);
 
+  function buildNodes(t: TFunction): Node<MyNodeData>[] {
+    return cardsData.map((card, index) => ({
+      ...card,
+      type: 'card',
+      data: {
+        ...card.data,
+        index,
+        label: t(card.data.labelKey),
+        latinName: t(card.data.latinNameKey),
+        dateOfOrigin: t(card.data.dateOfOriginKey),
+        whoDidItComeFrom: t(card.data.whoDidItComeFromKey),
+        whoAroseFromHim: t(card.data.whoAroseFromHimKey),
+        didHeComeOutOfAfrica: t(card.data.didHeComeOutOfAfricaKey),
+      },
+    }));
+  }
+  
   // --- INITIAL EDGES ---
   // Again, use Edge<MyEdgeData>[] if you store extra data on edges.
   const initialEdges: Edge<MyEdgeData>[] = [
@@ -101,7 +73,7 @@ const Diagram: FC = () => {
   ];
 
   // State for nodes & edges
-  const [nodes, setNodes] = useState<Node<MyNodeData>[]>(initialNodes);
+  const [nodes, setNodes] = useState(() => buildNodes(t));
   const [edges, setEdges] = useState<Edge<MyEdgeData>[]>(initialEdges);
 
   // React Flow wants typed callbacks for changes and connections:

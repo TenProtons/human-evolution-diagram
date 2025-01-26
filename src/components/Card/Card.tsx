@@ -19,7 +19,7 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
       </div>
       {data.imgUrl && <img src={data.imgUrl} alt={data.label} className="card__image" />}
       
-      {data.id !== '1' && <Handle type="target" position={Position.Top} />}
+      {data.index !== 0 && <Handle type="target" position={Position.Top} />}
       <Handle type="source" position={Position.Bottom} />
     </div>
   );
