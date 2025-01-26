@@ -13,6 +13,7 @@ import { cardsData } from '../../data/cards';
 import { initialEdges } from '../../data/eges';
 import { MyEdgeData, MyNodeData } from '../../models/common';
 import Card from '../Card/Card';
+import './Diagram.scss';
 
 const nodeTypes = {
   card: Card,
