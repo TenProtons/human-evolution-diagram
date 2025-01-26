@@ -1,25 +1,18 @@
-import { FC, useCallback, useEffect, useState } from 'react';
+import { FC, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import ReactFlow, {
-  addEdge,
-  applyEdgeChanges,
-  applyNodeChanges,
   Background,
-  Connection,
   Controls,
   Edge,
-  EdgeChange,
-  MarkerType,
   Node,
-  NodeChange,
   ReactFlowProvider
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 
-import { useTranslation } from 'react-i18next';
 import { cardsData } from '../../data/cards';
+import { initialEdges } from '../../data/eges';
 import { MyEdgeData, MyNodeData } from '../../models/common';
 import Card from '../Card/Card';
-import { TFunction } from 'i18next';
 
 const nodeTypes = {
   card: Card,
@@ -27,12 +20,8 @@ const nodeTypes = {
 
 const Diagram: FC = () => {
   const { t } = useTranslation();
-
-  useEffect(() => {
-    setNodes(buildNodes(t));
-  }, [t]);
-
-  function buildNodes(t: TFunction): Node<MyNodeData>[] {
+  const edges: Edge<MyEdgeData>[] = useMemo(() => initialEdges, []);
+  const nodes: Node<MyNodeData>[] = useMemo(() => {
     return cardsData.map((card, index) => ({
       ...card,
       type: 'card',
@@ -47,48 +36,7 @@ const Diagram: FC = () => {
         didHeComeOutOfAfrica: t(card.data.didHeComeOutOfAfricaKey),
       },
     }));
-  }
-  
-  // --- INITIAL EDGES ---
-  // Again, use Edge<MyEdgeData>[] if you store extra data on edges.
-  const initialEdges: Edge<MyEdgeData>[] = [
-    { 
-      id: 'e1-2', 
-      source: '1', 
-      target: '2',
-      markerEnd: {
-        type: MarkerType.ArrowClosed,
-      },
-      style: { strokeWidth: 4 },
-    },
-    { 
-      id: 'e1-3', 
-      source: '1', 
-      target: '3',
-      markerEnd: {
-        type: MarkerType.ArrowClosed,
-      },
-      style: { strokeWidth: 4 },
-    },
-  ];
-
-  // State for nodes & edges
-  const [nodes, setNodes] = useState(() => buildNodes(t));
-  const [edges, setEdges] = useState<Edge<MyEdgeData>[]>(initialEdges);
-
-  // React Flow wants typed callbacks for changes and connections:
-
-  const onNodesChange = useCallback((changes: NodeChange[]) => {
-    setNodes((prevNodes) => applyNodeChanges(changes, prevNodes));
-  }, []);
-
-  const onEdgesChange = useCallback((changes: EdgeChange[]) => {
-    setEdges((prevEdges) => applyEdgeChanges(changes, prevEdges));
-  }, []);
-
-  const onConnect = useCallback((connection: Connection) => {
-    setEdges((prevEdges) => addEdge(connection, prevEdges));
-  }, []);
+  }, [t]);
 
   return (
     <div style={{ width: '100%', height: '100%' }}>
@@ -97,9 +45,6 @@ const Diagram: FC = () => {
           nodeTypes={nodeTypes}
           nodes={nodes}
           edges={edges}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          onConnect={onConnect}
           fitView
           nodesDraggable={false}
           nodesConnectable={false}
