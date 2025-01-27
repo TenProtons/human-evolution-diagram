@@ -8,6 +8,8 @@ export interface MyNodeData {
   whoAroseFromHim: string;
   didHeComeOutOfAfrica: string;
   imgUrl: string;
+  imgSource: string;
+  imgAuthor: string;
 }
 
 export interface MyEdgeData {

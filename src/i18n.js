@@ -6,6 +6,8 @@ const resources = {
     translation: {
       "title": "Human Evolution",
       "subtitle": "Timeline from Australopithecus to Homo Sapiens",
+      "img_source": "Source",
+      "img_author": "Author",
       "australopithecus": "Australopithecus",
       "neanderthal": "Neanderthal",
       "sapiens": "Homo Sapiens",
@@ -28,6 +30,8 @@ const resources = {
     translation: {
       "title": "Еволюція Людини",
       "subtitle": "Хронологія від Останнього спільного предка між шимпанзе та людиною до Homo Sapiens",
+      "img_source": "Джерело",
+      "img_author": "Автор",
       "australopithecus": "Австралопітек",
       "neanderthal": "Неандерталець",
       "sapiens": "Homo Sapiens",
