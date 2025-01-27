@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { Handle, NodeProps, Position } from 'reactflow';
+import { useTranslation } from 'react-i18next';
+import { Handle, HandleType, NodeProps } from 'reactflow';
 import { MyNodeData } from '../../models/common';
 import './Card.scss';
-import { useTranslation } from 'react-i18next';
 
 const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
     const { t } = useTranslation();
@@ -21,8 +21,10 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
         {data.imgAuthor && <p><b>{ t('img_author') }:</b> {data.imgAuthor}</p>}
       </div>
       
-      {data.index !== 0 && <Handle type="target" position={Position.Top} />}
-      <Handle type="source" position={Position.Bottom} />
+      {data.handleOptions?.top && <Handle type={data.handleOptions?.top.type as HandleType} position={data.handleOptions?.top.position} />}
+      {data.handleOptions?.bottom && <Handle type={data.handleOptions?.bottom.type as HandleType} position={data.handleOptions?.bottom.position} />}
+      {data.handleOptions?.right && <Handle type={data.handleOptions?.right.type as HandleType} position={data.handleOptions?.right.position} />}
+      {data.handleOptions?.left && <Handle type={data.handleOptions?.left.type as HandleType} position={data.handleOptions?.left.position} />}
     </div>
   );
 };

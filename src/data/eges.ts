@@ -20,7 +20,7 @@ export const initialEdges = [
       stroke: '#999999',
       strokeWidth: 1,
     },
-    labelBgPadding: [8, 4],  // horizontal/vertical padding
+    labelBgPadding: [8, 4] as [number, number],
     labelBgBorderRadius: 4,
   },
   {

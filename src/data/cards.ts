@@ -10,6 +10,12 @@ export const cardsData = [
       whoAroseFromHimKey: 'chlca.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
       imgUrl: './src/assets/img/chlca.jpg',
+      handleOptions: {
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        }
+      }
     },
   },
   {
@@ -23,6 +29,16 @@ export const cardsData = [
       whoAroseFromHimKey: 'chlca.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
       imgUrl: './src/assets/img/chlca.jpg',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        }
+      }
     },
   },
   {
@@ -36,6 +52,16 @@ export const cardsData = [
       whoAroseFromHimKey: 'chlca.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
       imgUrl: './src/assets/img/chlca.jpg',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        }
+      }
     },
   },
 ];

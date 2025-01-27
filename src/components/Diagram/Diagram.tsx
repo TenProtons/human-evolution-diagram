@@ -11,7 +11,7 @@ import 'reactflow/dist/style.css';
 
 import { cardsData } from '../../data/cards';
 import { initialEdges } from '../../data/eges';
-import { MyEdgeData, MyNodeData } from '../../models/common';
+import { MyNodeData } from '../../models/common';
 import Card from '../Card/Card';
 import './Diagram.scss';
 
@@ -21,7 +21,7 @@ const nodeTypes = {
 
 const Diagram: FC = () => {
   const { t } = useTranslation();
-  const edges: Edge<MyEdgeData>[] = useMemo(() => initialEdges, []);
+  const edges: Edge[] = useMemo(() => initialEdges, []);
   const nodes: Node<MyNodeData>[] = useMemo(() => {
     return cardsData.map((card, index) => ({
       ...card,
@@ -35,7 +35,7 @@ const Diagram: FC = () => {
         whoDidItComeFrom: t(card.data.whoDidItComeFromKey),
         whoAroseFromHim: t(card.data.whoAroseFromHimKey),
         didHeComeOutOfAfrica: t(card.data.didHeComeOutOfAfricaKey),
-      },
+      } as MyNodeData,
     }));
   }, [t]);
 
