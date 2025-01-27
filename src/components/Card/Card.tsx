@@ -16,8 +16,8 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
         <p><b>{ t('who_did_it_come_from') }:</b> {data.whoDidItComeFrom}</p>
         <p><b>{ t('who_arose_from_him') }:</b> {data.whoAroseFromHim}</p>
         <p><b>{ t('did_he_come_out_of_Africa') }:</b> {data.didHeComeOutOfAfrica}</p>
+        {data.imgUrl && <img src={data.imgUrl} alt={data.label} className="card__image" />}
       </div>
-      {data.imgUrl && <img src={data.imgUrl} alt={data.label} className="card__image" />}
       
       {data.index !== 0 && <Handle type="target" position={Position.Top} />}
       <Handle type="source" position={Position.Bottom} />
