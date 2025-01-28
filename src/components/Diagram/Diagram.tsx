@@ -32,9 +32,9 @@ const Diagram: FC = () => {
         label: t(card.data.labelKey),
         latinName: t(card.data.latinNameKey),
         dateOfOrigin: t(card.data.dateOfOriginKey),
-        whoDidItComeFrom: t(card.data.whoDidItComeFromKey),
-        whoAroseFromHim: t(card.data.whoAroseFromHimKey),
-        didHeComeOutOfAfrica: t(card.data.didHeComeOutOfAfricaKey),
+        whoDidItComeFrom: t(card.data.whoDidItComeFromKey || ''),
+        whoAroseFromHim: t(card.data.whoAroseFromHimKey || ''),
+        didHeComeOutOfAfrica: t(card.data.didHeComeOutOfAfricaKey || ''),
       } as MyNodeData,
     }));
   }, [t]);

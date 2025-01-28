@@ -23,7 +23,20 @@ const resources = {
         "who_did_it_come_from": "",
         "who_arose_from_him": "",
         "did_he_come_out_of_Africa": "",
-      }
+      },
+      panGenus: {
+        "title": "",
+        "latin_name": "Pan (genus)",
+        "date_of_origin": "",
+      },
+      sahelanthropus: {
+        "title": "Sahelanthropus",
+        "latin_name": "Sahelanthropus tchadensis",
+        "date_of_origin": "",
+        "who_did_it_come_from": "Chimpanzee–Human Last Common Ancestor",
+        "who_arose_from_him": "Ardipithecus",
+        "did_he_come_out_of_Africa": "",
+      },
     }
   },
   uk: {
@@ -47,7 +60,20 @@ const resources = {
         "who_did_it_come_from": "ранні гомініни та предки шимпанзе",
         "who_arose_from_him": "Sahelanthropus, предки шимпанзе",
         "did_he_come_out_of_Africa": "ні",
-      }
+      },
+      panGenus: {
+        "title": "Спільний предок шимпанзе та бонобо",
+        "latin_name": "Pan (genus)",
+        "date_of_origin": "близько 7 млн років тому",
+      },
+      sahelanthropus: {
+        "title": "Сахелантроп",
+        "latin_name": "Sahelanthropus tchadensis",
+        "date_of_origin": "близько 7 млн років тому",
+        "who_did_it_come_from": "Chimpanzee–Human Last Common Ancestor",
+        "who_arose_from_him": "Ardipithecus",
+        "did_he_come_out_of_Africa": "ні",
+      },
     }
   }
 };
