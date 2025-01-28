@@ -52,7 +52,7 @@ export const cardsData = [
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
       dateOfOriginKey: 'panGenus.date_of_origin',
-      whoDidItComeFromKey: null,
+      whoDidItComeFromKey: 'panGenus.who_did_it_come_from',
       whoAroseFromHimKey: null,
       didHeComeOutOfAfricaKey: null,
       imgSource: '',
