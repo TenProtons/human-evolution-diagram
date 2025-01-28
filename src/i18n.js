@@ -16,6 +16,9 @@ const resources = {
       "who_did_it_come_from": "Від кого виник",
       "who_arose_from_him": "Хто виник від нього",
       "did_he_come_out_of_Africa": "Чи виходив з Африки",
+      labels: {
+        "fireDiscovery": "🔥 1.5 million years ago",
+      },
       chlca: {
         "title": "",
         "latin_name": "",
@@ -53,6 +56,9 @@ const resources = {
       "who_did_it_come_from": "Від кого виник",
       "who_arose_from_him": "Хто виник від нього",
       "did_he_come_out_of_Africa": "Чи виходив з Африки",
+      labels: {
+        "fireDiscovery": "🔥 1.5 млн років тому",
+      },
       chlca: {
         "title": "Останній спільний предок між шимпанзе та людиною (CHLCA)",
         "latin_name": "(немає точної назви, можливо схожі на Pan та Homo)",

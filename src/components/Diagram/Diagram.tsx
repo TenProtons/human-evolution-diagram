@@ -21,7 +21,12 @@ const nodeTypes = {
 
 const Diagram: FC = () => {
   const { t } = useTranslation();
-  const edges: Edge[] = useMemo(() => initialEdges, []);
+  const edges: Edge[] = useMemo(() => {
+    return initialEdges.map(edge => ({
+      ...edge,
+      label: t(edge.labelKey || ''),
+    }));
+  }, [t]);
   const nodes: Node<MyNodeData>[] = useMemo(() => {
     return cardsData.map((card, index) => ({
       ...card,
