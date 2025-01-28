@@ -20,7 +20,7 @@ export const cardsData = [
   },
   {
     id: '2',
-    position: { x: -300, y: 750 },
+    position: { x: -500, y: 950 },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',
@@ -43,7 +43,7 @@ export const cardsData = [
   },
   {
     id: '3',
-    position: { x: 300, y: 750 },
+    position: { x: 500, y: 950 },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',
