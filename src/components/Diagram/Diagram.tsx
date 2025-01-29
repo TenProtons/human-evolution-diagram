@@ -52,6 +52,7 @@ const Diagram: FC = () => {
           nodes={nodes}
           edges={edges}
           fitView
+          minZoom={0.05}
           nodesDraggable={false}
           nodesConnectable={false}
           style={{
