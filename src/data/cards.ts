@@ -1,3 +1,8 @@
+import chlcaImg from '../assets/img/chlca.jpg';
+import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
+import chimpanzeeImg from '../assets/img/chimpanzee.jpg';
+import bonoboImg from '../assets/img/bonobo.jpg';
+
 export const cardsData = [
   {
     id: '100',
@@ -9,7 +14,7 @@ export const cardsData = [
       whoDidItComeFromKey: 'chlca.who_did_it_come_from',
       whoAroseFromHimKey: 'chlca.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
-      imgUrl: './src/assets/img/chlca.jpg',
+      imgPath: chlcaImg,
       imgSource: 'Згенеровано штучним інтелектом',
       imgAuthor: '',
       handleOptions: {
@@ -30,7 +35,7 @@ export const cardsData = [
       whoDidItComeFromKey: 'sahelanthropus.who_did_it_come_from',
       whoAroseFromHimKey: 'sahelanthropus.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'sahelanthropus.did_he_come_out_of_Africa',
-      imgUrl: './src/assets/img/sahelanthropus.jpg',
+      imgPath: sahelanthropusImg,
       imgSource: 'Згенеровано штучним інтелектом',
       imgAuthor: '',
       handleOptions: {
@@ -78,7 +83,7 @@ export const cardsData = [
       dateOfOriginKey: 'chimpanzee.date_of_origin',
       whoDidItComeFromKey: 'chimpanzee.who_did_it_come_from',
       didHeComeOutOfAfricaKey: null,
-      imgUrl: './src/assets/img/chimpanzee.jpg',
+      imgPath: chimpanzeeImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Schimpanse_Zoo_Leipzig.jpg',
       imgAuthor: '',
       handleOptions: {
@@ -98,7 +103,7 @@ export const cardsData = [
       dateOfOriginKey: 'bonobo.date_of_origin',
       whoDidItComeFromKey: 'bonobo.who_did_it_come_from',
       didHeComeOutOfAfricaKey: null,
-      imgUrl: './src/assets/img/Bonobo.jpg',
+      imgPath: bonoboImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Apeldoorn_Apenheul_zoo_Bonobo.jpg',
       imgAuthor: '',
       handleOptions: {

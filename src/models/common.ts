@@ -10,7 +10,7 @@ export interface MyNodeData {
   whoDidItComeFrom?: string; // optional
   whoAroseFromHim?: string;
   didHeComeOutOfAfrica?: string;
-  imgUrl?: string;
+  imgPath?: string;
   imgSource?: string;
   imgAuthor?: string;
   handleOptions?: {
