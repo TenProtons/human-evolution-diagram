@@ -22,7 +22,7 @@ export const cardsData = [
   },
   {
     id: '101',
-    position: { x: -500, y: 950 },
+    position: { x: -650, y: 950 },
     data: {
       labelKey: 'sahelanthropus.title',
       latinNameKey: 'sahelanthropus.latin_name',
@@ -47,7 +47,7 @@ export const cardsData = [
   },
   {
     id: '102',
-    position: { x: 500, y: 950 },
+    position: { x: 650, y: 950 },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
@@ -66,6 +66,26 @@ export const cardsData = [
           type: 'source',
           position: 'bottom'
         }
+      }
+    },
+  },
+  {
+    id: '103',
+    position: { x: 0, y: 1850 },
+    data: {
+      labelKey: 'chimpanzee.title',
+      latinNameKey: 'chimpanzee.latin_name',
+      dateOfOriginKey: 'chimpanzee.date_of_origin',
+      whoDidItComeFromKey: 'chimpanzee.who_did_it_come_from',
+      didHeComeOutOfAfricaKey: null,
+      imgUrl: './src/assets/img/chimpanzee.jpg',
+      imgSource: 'https://commons.wikimedia.org/wiki/File:Schimpanse_Zoo_Leipzig.jpg',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
       }
     },
   },

@@ -41,6 +41,18 @@ const resources = {
         "who_arose_from_him": "Ardipithecus",
         "did_he_come_out_of_Africa": "",
       },
+      chimpanzee: {
+        "title": "",
+        "latin_name": "Pan troglodytes",
+        "date_of_origin": "",
+        "who_did_it_come_from": "",
+      },
+      bonobo: {
+        "title": "",
+        "latin_name": "Pan paniscus",
+        "date_of_origin": "",
+        "who_did_it_come_from": "",
+      },
     }
   },
   uk: {
@@ -72,14 +84,14 @@ const resources = {
         "title": "Спільний предок шимпанзе та бонобо",
         "latin_name": "Pan (genus)",
         "date_of_origin": "близько 7 млн років тому",
-        "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
+        "who_did_it_come_from": "Останній спільний предок між шимпанзе та людиною",
         "who_arose_from_him": "Шимпанзе та Бонобо",
       },
       sahelanthropus: {
         "title": "Сахелантроп",
         "latin_name": "Sahelanthropus tchadensis",
         "date_of_origin": "близько 7 млн років тому",
-        "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
+        "who_did_it_come_from": "Останній спільний предок між шимпанзе та людиною",
         "who_arose_from_him": "Ardipithecus",
         "did_he_come_out_of_Africa": "ні",
       },

@@ -20,8 +20,8 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
         {data.whoAroseFromHim && <p><b>{ t('who_arose_from_him') }:</b> {data.whoAroseFromHim}</p>}
         {data.didHeComeOutOfAfrica && <p><b>{ t('did_he_come_out_of_Africa') }:</b> {data.didHeComeOutOfAfrica}</p>}
         {image}
-        {data.imgSource && <p><b>{ t('img_source') }:</b> {data.imgSource}</p>}
-        {data.imgAuthor && <p><b>{ t('img_author') }:</b> {data.imgAuthor}</p>}
+        {data.imgSource && <p><b>{ t('img_source') }:</b> <span className="card__source">{data.imgSource}</span></p>}
+        {data.imgAuthor && <p><b>{ t('img_author') }:</b> <span className="card__author">{data.imgAuthor}</span></p>}
       </div>
       
       {data.handleOptions?.top && <Handle type={data.handleOptions?.top.type as HandleType} position={data.handleOptions?.top.position} />}
