@@ -6,6 +6,9 @@ import './Card.scss';
 
 const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
     const { t } = useTranslation();
+    const image = data.imgUrl ? 
+      <img src={data.imgUrl} alt={data.label} className="card__image" /> : 
+      <span className="card__symbol-question-mark">?</span>;
 
   return (
     <div className="card">
@@ -16,7 +19,7 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
         {data.whoDidItComeFrom && <p><b>{ t('who_did_it_come_from') }:</b> {data.whoDidItComeFrom}</p>}
         {data.whoAroseFromHim && <p><b>{ t('who_arose_from_him') }:</b> {data.whoAroseFromHim}</p>}
         {data.didHeComeOutOfAfrica && <p><b>{ t('did_he_come_out_of_Africa') }:</b> {data.didHeComeOutOfAfrica}</p>}
-        {data.imgUrl && <img src={data.imgUrl} alt={data.label} className="card__image" />}
+        {image}
         {data.imgSource && <p><b>{ t('img_source') }:</b> {data.imgSource}</p>}
         {data.imgAuthor && <p><b>{ t('img_author') }:</b> {data.imgAuthor}</p>}
       </div>

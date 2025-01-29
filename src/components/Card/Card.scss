@@ -21,4 +21,13 @@
     height: 280px;
     object-fit: contain;
   }
+
+  &__symbol-question-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 15rem;
+    font-size: 20rem;
+    font-family: none;
+  }
 }
