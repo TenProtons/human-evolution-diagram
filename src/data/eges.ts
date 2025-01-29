@@ -19,11 +19,11 @@ const labelOptions = {
 
 export const initialEdges = [
   {
-    id: 'e1-2',
-    source: '1',
-    target: '2',
+    id: 'e100-101',
+    source: '100',
+    target: '101',
     markerEnd: { type: MarkerType.ArrowClosed },
-    style: { strokeWidth: 4 },
+    style: { strokeWidth: 6 },
     labelKey: 'labels.fireDiscovery',
     labelStyle: labelOptions.labelStyle,
     labelShowBg: labelOptions.labelShowBg,
@@ -32,11 +32,11 @@ export const initialEdges = [
     labelBgBorderRadius: labelOptions.labelBgBorderRadius,
   },
   {
-    id: 'e1-3',
-    source: '1',
-    target: '3',
+    id: 'e100-102',
+    source: '100',
+    target: '102',
     markerEnd: { type: MarkerType.ArrowClosed },
-    style: { strokeWidth: 4 },
+    style: { strokeWidth: 6 },
     labelKey: null,
     labelStyle: labelOptions.labelStyle,
     labelShowBg: labelOptions.labelShowBg,

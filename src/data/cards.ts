@@ -1,6 +1,6 @@
 export const cardsData = [
   {
-    id: '1',
+    id: '100',
     position: { x: 0, y: 50 },
     data: {
       labelKey: 'chlca.title',
@@ -21,7 +21,7 @@ export const cardsData = [
     },
   },
   {
-    id: '2',
+    id: '101',
     position: { x: -500, y: 950 },
     data: {
       labelKey: 'sahelanthropus.title',
@@ -46,14 +46,14 @@ export const cardsData = [
     },
   },
   {
-    id: '3',
+    id: '102',
     position: { x: 500, y: 950 },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
       dateOfOriginKey: 'panGenus.date_of_origin',
       whoDidItComeFromKey: 'panGenus.who_did_it_come_from',
-      whoAroseFromHimKey: null,
+      whoAroseFromHimKey: 'panGenus.who_arose_from_him',
       didHeComeOutOfAfricaKey: null,
       imgSource: '',
       imgAuthor: '',

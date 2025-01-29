@@ -73,6 +73,7 @@ const resources = {
         "latin_name": "Pan (genus)",
         "date_of_origin": "близько 7 млн років тому",
         "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
+        "who_arose_from_him": "Шимпанзе та Бонобо",
       },
       sahelanthropus: {
         "title": "Сахелантроп",
@@ -81,6 +82,18 @@ const resources = {
         "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
         "who_arose_from_him": "Ardipithecus",
         "did_he_come_out_of_Africa": "ні",
+      },
+      chimpanzee: {
+        "title": "Шимпанзе",
+        "latin_name": "Pan troglodytes",
+        "date_of_origin": "близько 1-2 млн років тому",
+        "who_did_it_come_from": "Pan (genus)",
+      },
+      bonobo: {
+        "title": "Бонобо",
+        "latin_name": "Pan paniscus",
+        "date_of_origin": "близько 1-2 млн років тому",
+        "who_did_it_come_from": "Pan (genus)",
       },
     }
   }
