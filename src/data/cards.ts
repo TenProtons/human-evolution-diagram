@@ -89,4 +89,24 @@ export const cardsData = [
       }
     },
   },
+  {
+    id: '104',
+    position: { x: 1300, y: 1850 },
+    data: {
+      labelKey: 'bonobo.title',
+      latinNameKey: 'bonobo.latin_name',
+      dateOfOriginKey: 'bonobo.date_of_origin',
+      whoDidItComeFromKey: 'bonobo.who_did_it_come_from',
+      didHeComeOutOfAfricaKey: null,
+      imgUrl: './src/assets/img/Bonobo.jpg',
+      imgSource: 'https://commons.wikimedia.org/wiki/File:Apeldoorn_Apenheul_zoo_Bonobo.jpg',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+      }
+    },
+  },
 ];

@@ -40,4 +40,10 @@ export const initialEdges = [
     source: '102',
     target: '103',
   },
+  {
+    ...sharedEdgeProps,
+    id: 'e102-104',
+    source: '102',
+    target: '104',
+  },
 ];
