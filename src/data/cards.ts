@@ -8,7 +8,7 @@ import ardipithecusImg from '../assets/img/ardipithecus-ramidus.jpg';
 export const cardsData = [
   {
     id: '100',
-    position: { x: 0, y: 50 },
+    position: { x: 0, y: 10 },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',

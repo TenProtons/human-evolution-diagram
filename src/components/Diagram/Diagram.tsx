@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import ReactFlow, {
   Background,
   Controls,
-  Edge,
   Node,
   ReactFlowProvider
 } from 'reactflow';
@@ -22,12 +21,12 @@ const nodeTypes = {
 
 const Diagram: FC = () => {
   const { t } = useTranslation();
-  const edges: Edge[] = useMemo(() => {
-    return initialEdges.map(edge => ({
-      ...edge,
-      label: t(edge.labelKey || ''),
-    }));
-  }, [t]);
+  // const edges: Edge[] = useMemo(() => {
+  //   return initialEdges.map(edge => ({
+  //     ...edge,
+  //     label: t(edge.labelKey || ''),
+  //   }));
+  // }, [t]);
   const nodes: Node<MyNodeData>[] = useMemo(() => {
     return cardsData.map((card, index) => ({
       ...card,
@@ -51,7 +50,7 @@ const Diagram: FC = () => {
         <ReactFlow
           nodeTypes={nodeTypes}
           nodes={nodes}
-          edges={edges}
+          edges={initialEdges}
           fitView
           minZoom={0.05}
           nodesDraggable={false}
