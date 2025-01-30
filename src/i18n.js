@@ -110,7 +110,7 @@ const resources = {
       },
       ardipithecus: {
         "title": "Ардипітек",
-        "latin_name": "Ardipithecus",
+        "latin_name": "Ardipithecus ramidus",
         "date_of_origin": "близько 4.4 млн років тому",
         "who_did_it_come_from": "Сахелантроп або подібні ранні гомініни",
         "who_arose_from_him": "Австралопітек",
