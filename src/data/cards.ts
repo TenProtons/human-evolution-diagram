@@ -18,7 +18,7 @@ export const cardsData = [
       whoAroseFromHimKey: 'chlca.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
       imgPath: chlcaImg,
-      imgSource: 'Згенеровано штучним інтелектом',
+      imgSource: 'ai_origin',
       imgAuthor: '',
       handleOptions: {
         bottom:{
@@ -39,7 +39,7 @@ export const cardsData = [
       whoAroseFromHimKey: 'sahelanthropus.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'sahelanthropus.did_he_come_out_of_Africa',
       imgPath: sahelanthropusImg,
-      imgSource: 'Згенеровано штучним інтелектом',
+      imgSource: 'ai_origin',
       imgAuthor: '',
       handleOptions: {
         top:{
