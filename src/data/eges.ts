@@ -2,8 +2,11 @@ import { MarkerType } from "reactflow";
 
 const sharedEdgeProps = {
   labelKey: '',
-  markerEnd: { type: MarkerType.ArrowClosed },
-  style: { strokeWidth: 6 },
+  markerEnd: { type: MarkerType.ArrowClosed, color: 'var(--lines-color)', },
+  style: { 
+    strokeWidth: 6, 
+    stroke: 'var(--lines-color)',
+  },
   labelStyle: {
     fill: '#333',
     fontSize: 14,
@@ -26,7 +29,6 @@ export const initialEdges = [
     id: 'e100-101',
     source: '100',
     target: '101',
-    labelKey: 'labels.fireDiscovery',
   },
   {
     ...sharedEdgeProps,

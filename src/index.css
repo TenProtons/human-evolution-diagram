@@ -13,24 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   --text-color: #2c3e50;
-  --slider-value-color: #2c3e50;
-  --link-color: #2c3e50;
-  --error-color: red;
-  --error-background-color: rgba(255, 0, 0, 0.3);
-  --active-link-color: #42b983;
-  --scrollbar-color: #d3dbe5;
+  --lines-color: #596269;
   --button-background: #f0f0f0;
   --button-text-color: #2c3e50;
-  --input-background: #ffffff;
-  --input-text-color: #2c3e50;
-  --button-background-disabled: #cccccc;
-  --button-text-color-disabled: #888888;
   --button-background-hover: #e0e0e0;
-  --chart-line-color: #4b9cc5;
-  --chart-grid-color: rgba(0, 0, 0, 0.1); 
-  --chart-font-color: #2c3e50; 
-  --chart-tooltip-bg: #ffffff; 
-  --calculated-info-border: 2px solid #5ec3f6;
   --regular-border-color: #ccc;
 
   --3: 3px;
@@ -54,6 +40,7 @@
 .theme-dark {
   --bg-color: #212121;
   --text-color: #f0f0f0;
+  --lines-color: #c0c7ce;
   --card-bg-color: #30363a;
   --arrow-color: #fefefe;
 }

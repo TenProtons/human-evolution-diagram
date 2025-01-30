@@ -13,6 +13,7 @@ import { cardsData } from '../../data/cards';
 import { initialEdges } from '../../data/eges';
 import { MyNodeData } from '../../models/common';
 import Card from '../Card/Card';
+import TimeLinesOverlay from '../TimeLinesOverlay/TimeLinesOverlay';
 import './Diagram.scss';
 
 const nodeTypes = {
@@ -61,6 +62,7 @@ const Diagram: FC = () => {
           }}
         >
           <Controls />
+          <TimeLinesOverlay />
           <Background />
         </ReactFlow>
       </ReactFlowProvider>
