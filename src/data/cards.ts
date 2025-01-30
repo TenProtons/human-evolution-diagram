@@ -2,6 +2,7 @@ import chlcaImg from '../assets/img/chlca.jpg';
 import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
 import chimpanzeeImg from '../assets/img/chimpanzee.jpg';
 import bonoboImg from '../assets/img/bonobo.jpg';
+import questionMarkImg from '../assets/img/question-mark.jpg';
 
 export const cardsData = [
   {
@@ -60,7 +61,8 @@ export const cardsData = [
       whoDidItComeFromKey: 'panGenus.who_did_it_come_from',
       whoAroseFromHimKey: 'panGenus.who_arose_from_him',
       didHeComeOutOfAfricaKey: null,
-      imgSource: '',
+      imgPath: questionMarkImg,
+      imgSource: 'ai_origin',
       imgAuthor: '',
       handleOptions: {
         top:{

@@ -61,6 +61,7 @@ const resources = {
       "subtitle": "Хронологія від Останнього спільного предка між шимпанзе та людиною до Homo Sapiens",
       "img_source": "Джерело",
       "img_author": "Автор",
+      "ai_origin": "Згенеровано штучним інтелектом",
       "australopithecus": "Австралопітек",
       "neanderthal": "Неандерталець",
       "sapiens": "Homo Sapiens",
