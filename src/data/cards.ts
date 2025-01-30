@@ -116,4 +116,28 @@ export const cardsData = [
       }
     },
   },
+  {
+    id: '105',
+    position: { x: -650, y: 1850 },
+    data: {
+      labelKey: 'ardipithecus.title',
+      latinNameKey: 'ardipithecus.latin_name',
+      dateOfOriginKey: 'ardipithecus.date_of_origin',
+      whoDidItComeFromKey: 'ardipithecus.who_did_it_come_from',
+      didHeComeOutOfAfricaKey: null,
+      imgPath: bonoboImg,
+      imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/ardipithecus-ramidus',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        }
+      }
+    },
+  },
 ];

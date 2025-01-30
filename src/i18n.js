@@ -78,7 +78,7 @@ const resources = {
         "latin_name": "(немає точної назви, можливо схожі на Pan та Homo)",
         "date_of_origin": "близько 7-8 млн років тому",
         "who_did_it_come_from": "ранні гомініни та предки шимпанзе",
-        "who_arose_from_him": "Sahelanthropus, предки шимпанзе",
+        "who_arose_from_him": "Сахелантроп, предки шимпанзе",
         "did_he_come_out_of_Africa": "ні",
       },
       panGenus: {
@@ -93,20 +93,28 @@ const resources = {
         "latin_name": "Sahelanthropus tchadensis",
         "date_of_origin": "близько 7 млн років тому",
         "who_did_it_come_from": "Останній спільний предок між шимпанзе та людиною",
-        "who_arose_from_him": "Ardipithecus",
+        "who_arose_from_him": "Ардипітек",
         "did_he_come_out_of_Africa": "ні",
       },
       chimpanzee: {
         "title": "Шимпанзе",
         "latin_name": "Pan troglodytes",
         "date_of_origin": "близько 1-2 млн років тому",
-        "who_did_it_come_from": "Pan (genus)",
+        "who_did_it_come_from": "спільний предок шимпанзе та бонобо",
       },
       bonobo: {
         "title": "Бонобо",
         "latin_name": "Pan paniscus",
         "date_of_origin": "близько 1-2 млн років тому",
-        "who_did_it_come_from": "Pan (genus)",
+        "who_did_it_come_from": "спільний предок шимпанзе та бонобо",
+      },
+      ardipithecus: {
+        "title": "Ардипітек",
+        "latin_name": "Ardipithecus",
+        "date_of_origin": "близько 4.4 млн років тому",
+        "who_did_it_come_from": "Сахелантроп або подібні ранні гомініни",
+        "who_arose_from_him": "Австралопітек",
+        "did_he_come_out_of_Africa": "ні",
       },
     }
   }
