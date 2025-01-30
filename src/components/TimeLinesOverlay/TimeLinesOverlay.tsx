@@ -1,12 +1,6 @@
-import { t } from "i18next";
 import { useViewport } from "reactflow";
-
-const lines = [
-  { y: 0, label: "8 million years" },
-  { y: 200, label: "7 million years" },
-  { y: 300, label: "4 million years" },
-  { y: 1000, label: t("labels.fireDiscovery") },
-];
+import { timelineLines } from "../../data/timelineLines";
+import { t } from "i18next";
 
 export default function TimeLinesOverlay() {
   const { x, y, zoom } = useViewport();
@@ -23,7 +17,7 @@ export default function TimeLinesOverlay() {
       }}
     >
       <g transform={`translate(${x}, ${y}) scale(${zoom})`}>
-        {lines.map((line, i) => (
+        {timelineLines.map((line, i) => (
           <g key={i}>
             <line
               x1={-5000}
@@ -40,7 +34,7 @@ export default function TimeLinesOverlay() {
               fontSize={48}
               fill="var(--text-color)"
             >
-              {line.label}
+              {t(line.label)}
             </text>
           </g>
         ))}

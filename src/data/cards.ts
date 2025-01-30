@@ -4,11 +4,12 @@ import chimpanzeeImg from '../assets/img/chimpanzee.jpg';
 import bonoboImg from '../assets/img/bonobo.jpg';
 import questionMarkImg from '../assets/img/question-mark.jpg';
 import ardipithecusImg from '../assets/img/ardipithecus-ramidus.jpg';
+import { timelineLines } from './timelineLines';
 
 export const cardsData = [
   {
     id: '100',
-    position: { x: 0, y: 10 },
+    position: { x: 0, y: timelineLines[0].y + 10 },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',
