@@ -3,6 +3,7 @@ import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
 import chimpanzeeImg from '../assets/img/chimpanzee.jpg';
 import bonoboImg from '../assets/img/bonobo.jpg';
 import questionMarkImg from '../assets/img/question-mark.jpg';
+import ardipithecusImg from '../assets/img/ardipithecus-ramidus.jpg';
 
 export const cardsData = [
   {
@@ -78,7 +79,7 @@ export const cardsData = [
   },
   {
     id: '103',
-    position: { x: 0, y: 1850 },
+    position: { x: 0, y: 3850 },
     data: {
       labelKey: 'chimpanzee.title',
       latinNameKey: 'chimpanzee.latin_name',
@@ -98,7 +99,7 @@ export const cardsData = [
   },
   {
     id: '104',
-    position: { x: 1300, y: 1850 },
+    position: { x: 1300, y: 3850 },
     data: {
       labelKey: 'bonobo.title',
       latinNameKey: 'bonobo.latin_name',
@@ -124,8 +125,8 @@ export const cardsData = [
       latinNameKey: 'ardipithecus.latin_name',
       dateOfOriginKey: 'ardipithecus.date_of_origin',
       whoDidItComeFromKey: 'ardipithecus.who_did_it_come_from',
-      didHeComeOutOfAfricaKey: null,
-      imgPath: bonoboImg,
+      didHeComeOutOfAfricaKey: 'ardipithecus.did_he_come_out_of_Africa',
+      imgPath: ardipithecusImg,
       imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/ardipithecus-ramidus',
       imgAuthor: '',
       handleOptions: {
