@@ -127,6 +127,7 @@ export const cardsData = [
       latinNameKey: 'ardipithecus.latin_name',
       dateOfOriginKey: 'ardipithecus.date_of_origin',
       whoDidItComeFromKey: 'ardipithecus.who_did_it_come_from',
+      whoAroseFromHimKey: 'ardipithecus.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'ardipithecus.did_he_come_out_of_Africa',
       imgPath: ardipithecusImg,
       imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/ardipithecus-ramidus',
@@ -145,12 +146,13 @@ export const cardsData = [
   },
   {
     id: '106',
-    position: { x: -650, y: timelineLines[19].y},
+    position: { x: -650, y: timelineLines[21].y},
     data: {
       labelKey: 'australopithecus_afarensis.title',
       latinNameKey: 'australopithecus_afarensis.latin_name',
       dateOfOriginKey: 'australopithecus_afarensis.date_of_origin',
       whoDidItComeFromKey: 'australopithecus_afarensis.who_did_it_come_from',
+      whoAroseFromHimKey: 'australopithecus_afarensis.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'australopithecus_afarensis.did_he_come_out_of_Africa',
       imgPath: australopithecusAfarensisImg,
       imgSource: 'Facsimile, Vienna Natural History Museum, Naturhistorisches Museum Wien',
