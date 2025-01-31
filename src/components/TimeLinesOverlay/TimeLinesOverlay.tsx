@@ -29,9 +29,9 @@ export default function TimeLinesOverlay() {
               strokeDasharray="20,20"
             />
             <text
-              x={-1300}
-              y={line.y - -50}
-              fontSize={48}
+              x={-2000}
+              y={line.y - -75}
+              fontSize={72}
               fill="var(--text-color)"
             >
               {t(line.label)}

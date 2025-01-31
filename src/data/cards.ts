@@ -9,7 +9,7 @@ import { timelineLines } from './timelineLines';
 export const cardsData = [
   {
     id: '100',
-    position: { x: 0, y: timelineLines[0].y + 10 },
+    position: { x: 0, y: timelineLines[0].y },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',
@@ -30,7 +30,7 @@ export const cardsData = [
   },
   {
     id: '101',
-    position: { x: -650, y: 950 },
+    position: { x: -650, y: timelineLines[1].y },
     data: {
       labelKey: 'sahelanthropus.title',
       latinNameKey: 'sahelanthropus.latin_name',
@@ -55,7 +55,7 @@ export const cardsData = [
   },
   {
     id: '102',
-    position: { x: 650, y: 950 },
+    position: { x: 650, y: timelineLines[1].y },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
@@ -80,7 +80,7 @@ export const cardsData = [
   },
   {
     id: '103',
-    position: { x: 0, y: 3850 },
+    position: { x: 0, y: timelineLines[3].y },
     data: {
       labelKey: 'chimpanzee.title',
       latinNameKey: 'chimpanzee.latin_name',
@@ -100,7 +100,7 @@ export const cardsData = [
   },
   {
     id: '104',
-    position: { x: 1300, y: 3850 },
+    position: { x: 1300, y: timelineLines[3].y },
     data: {
       labelKey: 'bonobo.title',
       latinNameKey: 'bonobo.latin_name',
@@ -120,7 +120,7 @@ export const cardsData = [
   },
   {
     id: '105',
-    position: { x: -650, y: 1850 },
+    position: { x: -650, y: timelineLines[2].y - 150},
     data: {
       labelKey: 'ardipithecus.title',
       latinNameKey: 'ardipithecus.latin_name',
