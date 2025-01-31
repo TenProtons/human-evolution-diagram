@@ -25,7 +25,7 @@ const resources = {
 
       // Edge/event labels
       labels: {
-        "fireDiscovery": "🔥 1.5 million years ago",
+        "fireDiscovery1.5": "🔥 1.5 million years ago",
       },
 
       // CHLCA
@@ -100,7 +100,7 @@ const resources = {
       "who_arose_from_him": "Хто виник від нього",
       "did_he_come_out_of_Africa": "Чи виходив з Африки",
       labels: {
-        "fireDiscovery": "🔥 1.5 млн років тому",
+        "fireDiscovery1.5": "🔥 1.5 млн років тому",
       },
       chlca: {
         "title": "Останній спільний предок між шимпанзе та людиною (CHLCA)",
@@ -143,6 +143,14 @@ const resources = {
         "date_of_origin": "близько 4.4 млн років тому",
         "who_did_it_come_from": "Сахелантроп або подібні ранні гомініни",
         "who_arose_from_him": "Австралопітек",
+        "did_he_come_out_of_Africa": "ні",
+      },
+      australopithecus_afarensis: {
+        "title": "Австралопітек",
+        "latin_name": "Australopithecus afarensis",
+        "date_of_origin": "близько 3.9-2.9 млн років тому",
+        "who_did_it_come_from": "Ардипітек",
+        "who_arose_from_him": "Людина уміла",
         "did_he_come_out_of_Africa": "ні",
       },
     }
