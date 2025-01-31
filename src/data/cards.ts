@@ -5,12 +5,13 @@ import chlcaImg from '../assets/img/chlca.jpg';
 import questionMarkImg from '../assets/img/question-mark.jpg';
 import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
 import australopithecusAfarensisImg from '../assets/img/australopithecus-afarensis.jpg';
+import homoHabilisImg from '../assets/img/homo-habilis.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
   {
     id: '100',
-    position: { x: 0, y: timelineLines[12].y },
+    position: { x: 600, y: timelineLines[12].y },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',
@@ -31,7 +32,7 @@ export const cardsData = [
   },
   {
     id: '101',
-    position: { x: -650, y: timelineLines[13].y },
+    position: { x: -600, y: timelineLines[13].y },
     data: {
       labelKey: 'sahelanthropus.title',
       latinNameKey: 'sahelanthropus.latin_name',
@@ -56,7 +57,7 @@ export const cardsData = [
   },
   {
     id: '102',
-    position: { x: 650, y: timelineLines[13].y },
+    position: { x: 1850, y: timelineLines[13].y },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
@@ -81,7 +82,7 @@ export const cardsData = [
   },
   {
     id: '103',
-    position: { x: 0, y: timelineLines[24].y },
+    position: { x: 1200, y: timelineLines[24].y },
     data: {
       labelKey: 'chimpanzee.title',
       latinNameKey: 'chimpanzee.latin_name',
@@ -101,7 +102,7 @@ export const cardsData = [
   },
   {
     id: '104',
-    position: { x: 1300, y: timelineLines[24].y },
+    position: { x: 2500, y: timelineLines[24].y },
     data: {
       labelKey: 'bonobo.title',
       latinNameKey: 'bonobo.latin_name',
@@ -121,7 +122,7 @@ export const cardsData = [
   },
   {
     id: '105',
-    position: { x: -650, y: timelineLines[18].y},
+    position: { x: -600, y: timelineLines[18].y},
     data: {
       labelKey: 'ardipithecus.title',
       latinNameKey: 'ardipithecus.latin_name',
@@ -146,7 +147,7 @@ export const cardsData = [
   },
   {
     id: '106',
-    position: { x: -650, y: timelineLines[21].y},
+    position: { x: -600, y: timelineLines[20].y},
     data: {
       labelKey: 'australopithecus_afarensis.title',
       latinNameKey: 'australopithecus_afarensis.latin_name',
@@ -155,8 +156,33 @@ export const cardsData = [
       whoAroseFromHimKey: 'australopithecus_afarensis.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'australopithecus_afarensis.did_he_come_out_of_Africa',
       imgPath: australopithecusAfarensisImg,
-      imgSource: 'Facsimile, Vienna Natural History Museum, Naturhistorisches Museum Wien',
-      imgAuthor: 'Photo: Don Hitchcock 2015. Artist: Atelier Élisabeth Daynès, Paris',
+      imgSource: 'https://www.donsmaps.com/lucy.html',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        }
+      }
+    },
+  },
+  {
+    id: '107',
+    position: { x: -600, y: timelineLines[22].y},
+    data: {
+      labelKey: 'homo_habilis.title',
+      latinNameKey: 'homo_habilis.latin_name',
+      dateOfOriginKey: 'homo_habilis.date_of_origin',
+      whoDidItComeFromKey: 'homo_habilis.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_habilis.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_habilis.did_he_come_out_of_Africa',
+      imgPath: homoHabilisImg,
+      imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/homo-habilis',
+      imgAuthor: '',
       handleOptions: {
         top:{
           type: 'target',
