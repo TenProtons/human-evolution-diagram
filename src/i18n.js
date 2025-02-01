@@ -166,8 +166,15 @@ const resources = {
         "latin_name": "Homo erectus",
         "date_of_origin": "близько 1.9 млн років тому",
         "who_did_it_come_from": "Людина уміла",
-        "who_arose_from_him": "Гайдельберзька людина",
+        "who_arose_from_him": "Гайдельберзька людина та людина флореська (Хобіт)",
         "did_he_come_out_of_Africa": "так - розселились до Азії та Європи близько 1.8 млн років тому",
+      },
+      homo_floresiensis: {
+        "title": "Людина флореська (Хобіт)",
+        "latin_name": "Homo floresiensis",
+        "date_of_origin": "близько 700 тисяч років тому",
+        "who_did_it_come_from": "Людина прямоходяча",
+        "who_arose_from_him": "тупикова гілка",
       },
     }
   }

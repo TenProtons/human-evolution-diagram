@@ -7,6 +7,7 @@ import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
 import australopithecusAfarensisImg from '../assets/img/australopithecus-afarensis.jpg';
 import homoHabilisImg from '../assets/img/homo-habilis.jpg';
 import homoErectusImg from '../assets/img/homo-erectus.jpg';
+import homoАloresiensisImg from '../assets/img/homo-floresiensis.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
@@ -217,10 +218,26 @@ export const cardsData = [
         bottom:{
           type: 'source',
           position: 'bottom'
-        },
-        right:{
-          type: 'source',
-          position: 'right'
+        }
+      }
+    },
+  },
+  {
+    id: '109',
+    position: { x: 300, y: timelineLines.homo_floresiensis.y},
+    data: {
+      labelKey: 'homo_floresiensis.title',
+      latinNameKey: 'homo_floresiensis.latin_name',
+      dateOfOriginKey: 'homo_floresiensis.date_of_origin',
+      whoDidItComeFromKey: 'homo_floresiensis.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_floresiensis.who_arose_from_him',
+      imgPath: homoАloresiensisImg,
+      imgSource: 'https://www.worldhistory.org/image/6740/homo-floresiensis-reconstruction/',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
         }
       }
     },
