@@ -6,6 +6,7 @@ import questionMarkImg from '../assets/img/question-mark.jpg';
 import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
 import australopithecusAfarensisImg from '../assets/img/australopithecus-afarensis.jpg';
 import homoHabilisImg from '../assets/img/homo-habilis.jpg';
+import homoErectusImg from '../assets/img/homo-erectus.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
@@ -191,6 +192,35 @@ export const cardsData = [
         bottom:{
           type: 'source',
           position: 'bottom'
+        }
+      }
+    },
+  },
+  {
+    id: '108',
+    position: { x: -600, y: timelineLines.homo_erectus.y},
+    data: {
+      labelKey: 'homo_erectus.title',
+      latinNameKey: 'homo_erectus.latin_name',
+      dateOfOriginKey: 'homo_erectus.date_of_origin',
+      whoDidItComeFromKey: 'homo_erectus.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_erectus.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_erectus.did_he_come_out_of_Africa',
+      imgPath: homoErectusImg,
+      imgSource: 'https://www.britannica.com/topic/Homo-erectus/Body-structure',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        },
+        right:{
+          type: 'source',
+          position: 'right'
         }
       }
     },

@@ -161,6 +161,14 @@ const resources = {
         "who_arose_from_him": "Людина прямоходяча",
         "did_he_come_out_of_Africa": "ні",
       },
+      homo_erectus: {
+        "title": "Людина прямоходяча",
+        "latin_name": "Homo erectus",
+        "date_of_origin": "близько 1.9 млн років тому",
+        "who_did_it_come_from": "Людина уміла",
+        "who_arose_from_him": "Гайдельберзька людина",
+        "did_he_come_out_of_Africa": "так - розселились до Азії та Європи близько 1.8 млн років тому",
+      },
     }
   }
 };
