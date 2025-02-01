@@ -166,15 +166,23 @@ const resources = {
         "latin_name": "Homo erectus",
         "date_of_origin": "близько 1.9 млн років тому",
         "who_did_it_come_from": "Людина уміла",
-        "who_arose_from_him": "Гайдельберзька людина та людина флореська (Хобіт)",
+        "who_arose_from_him": "Гайдельберзька людина та Людина флореська (Хобіт)",
         "did_he_come_out_of_Africa": "так - розселились до Азії та Європи близько 1.8 млн років тому",
       },
       homo_floresiensis: {
         "title": "Людина флореська (Хобіт)",
         "latin_name": "Homo floresiensis",
         "date_of_origin": "близько 700 тисяч років тому",
-        "who_did_it_come_from": "Людина прямоходяча",
+        "who_did_it_come_from": "походить від ранньоазійської Людини прямоходячої",
         "who_arose_from_him": "тупикова гілка",
+      },
+      homo_heidelbergensis: {
+        "title": "Гайдельберзька людина",
+        "latin_name": "Homo heidelbergensis",
+        "date_of_origin": "близько 700 - 600 тисяч років тому",
+        "who_did_it_come_from": "Людина прямоходяча",
+        "who_arose_from_him": "Денисівська людина, Неандерталець та Людина розумна",
+        "did_he_come_out_of_Africa": "Невдовзі після появи, 700 - 600 тисяч років тому, почали мігрувати з Африки до Європи та, можливо, частини Західної Азії.",
       },
     }
   }

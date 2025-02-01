@@ -8,6 +8,7 @@ import australopithecusAfarensisImg from '../assets/img/australopithecus-afarens
 import homoHabilisImg from '../assets/img/homo-habilis.jpg';
 import homoErectusImg from '../assets/img/homo-erectus.jpg';
 import homoАloresiensisImg from '../assets/img/homo-floresiensis.jpg';
+import homoHeidelbergensisImg from '../assets/img/homo-heidelbergensis.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
@@ -233,6 +234,27 @@ export const cardsData = [
       whoAroseFromHimKey: 'homo_floresiensis.who_arose_from_him',
       imgPath: homoАloresiensisImg,
       imgSource: 'https://www.worldhistory.org/image/6740/homo-floresiensis-reconstruction/',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        }
+      }
+    },
+  },
+  {
+    id: '110',
+    position: { x: -600, y: timelineLines.homo_heidelbergensis.y},
+    data: {
+      labelKey: 'homo_heidelbergensis.title',
+      latinNameKey: 'homo_heidelbergensis.latin_name',
+      dateOfOriginKey: 'homo_heidelbergensis.date_of_origin',
+      whoDidItComeFromKey: 'homo_heidelbergensis.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_heidelbergensis.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_heidelbergensis.did_he_come_out_of_Africa',
+      imgPath: homoHeidelbergensisImg,
+      imgSource: 'https://www.worldhistory.org/image/6442/homo-heidelbergensis-reconstruction/#google_vignette',
       imgAuthor: '',
       handleOptions: {
         top:{

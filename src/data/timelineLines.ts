@@ -30,7 +30,7 @@ export const timelineLines = {
   "0.9 mln": { y: 8800, label: "0.9 million years" },
   "0.8 mln": { y: 9400, label: "0.8 million years" },
   "homo_floresiensis": { y: 10000, label: "0.7 million years" },
-  "0.6 mln": { y: 10600, label: "0.6 million years" },
+  "homo_heidelbergensis": { y: 10600, label: "0.6 million years" },
   "0.5 mln": { y: 11200, label: "0.5 million years" },
   "0.4 mln": { y: 11800, label: "0.4 million years" },
   "0.3 mln": { y: 12400, label: "0.3 million years" },
