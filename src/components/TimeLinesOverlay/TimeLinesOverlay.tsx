@@ -4,6 +4,9 @@ import { t } from "i18next";
 
 export default function TimeLinesOverlay() {
   const { x, y, zoom } = useViewport();
+  const timelineEntries = Object.entries(timelineLines).sort(
+    ([, a], [, b]) => a.y - b.y
+  );
 
   return (
     <svg
@@ -17,8 +20,8 @@ export default function TimeLinesOverlay() {
       }}
     >
       <g transform={`translate(${x}, ${y}) scale(${zoom})`}>
-        {timelineLines.map((line, i) => (
-          <g key={i}>
+        {timelineEntries.map(([key, line]) => (
+          <g key={key}>
             <line
               x1={-5000}
               x2={5000}

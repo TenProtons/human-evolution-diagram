@@ -11,7 +11,7 @@ import { timelineLines } from './timelineLines';
 export const cardsData = [
   {
     id: '100',
-    position: { x: 600, y: timelineLines[12].y },
+    position: { x: 600, y: timelineLines.chlca.y },
     data: {
       labelKey: 'chlca.title',
       latinNameKey: 'chlca.latin_name',
@@ -32,7 +32,7 @@ export const cardsData = [
   },
   {
     id: '101',
-    position: { x: -600, y: timelineLines[13].y },
+    position: { x: -600, y: timelineLines.sahelanthropus_panGenus.y },
     data: {
       labelKey: 'sahelanthropus.title',
       latinNameKey: 'sahelanthropus.latin_name',
@@ -57,7 +57,7 @@ export const cardsData = [
   },
   {
     id: '102',
-    position: { x: 1850, y: timelineLines[13].y },
+    position: { x: 1850, y: timelineLines.sahelanthropus_panGenus.y },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
@@ -82,7 +82,7 @@ export const cardsData = [
   },
   {
     id: '103',
-    position: { x: 1200, y: timelineLines[24].y },
+    position: { x: 1200, y: timelineLines.chimpanzee_bonobo.y },
     data: {
       labelKey: 'chimpanzee.title',
       latinNameKey: 'chimpanzee.latin_name',
@@ -102,7 +102,7 @@ export const cardsData = [
   },
   {
     id: '104',
-    position: { x: 2500, y: timelineLines[24].y },
+    position: { x: 2500, y: timelineLines.chimpanzee_bonobo.y },
     data: {
       labelKey: 'bonobo.title',
       latinNameKey: 'bonobo.latin_name',
@@ -122,7 +122,7 @@ export const cardsData = [
   },
   {
     id: '105',
-    position: { x: -600, y: timelineLines[18].y},
+    position: { x: -600, y: timelineLines.ardipithecus.y},
     data: {
       labelKey: 'ardipithecus.title',
       latinNameKey: 'ardipithecus.latin_name',
@@ -147,7 +147,7 @@ export const cardsData = [
   },
   {
     id: '106',
-    position: { x: -600, y: timelineLines[20].y},
+    position: { x: -600, y: timelineLines.australopithecus_afarensis.y},
     data: {
       labelKey: 'australopithecus_afarensis.title',
       latinNameKey: 'australopithecus_afarensis.latin_name',
@@ -172,7 +172,7 @@ export const cardsData = [
   },
   {
     id: '107',
-    position: { x: -600, y: timelineLines[22].y},
+    position: { x: -600, y: timelineLines.homo_habilis.y},
     data: {
       labelKey: 'homo_habilis.title',
       latinNameKey: 'homo_habilis.latin_name',
