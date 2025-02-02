@@ -10,6 +10,7 @@ import homoErectusImg from '../assets/img/homo-erectus.jpg';
 import homoАloresiensisImg from '../assets/img/homo-floresiensis.jpg';
 import homoHeidelbergensisImg from '../assets/img/homo-heidelbergensis.jpg';
 import homoІapiensImg from '../assets/img/homo-sapiens.jpg';
+import neanderthalImg from '../assets/img/neanderthal.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
@@ -281,6 +282,27 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_sapiens.did_he_come_out_of_Africa',
       imgPath: homoІapiensImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        }
+      }
+    },
+  },
+  {
+    id: '112',
+    position: { x: -100, y: timelineLines.homo_neanderthalensis.y},
+    data: {
+      labelKey: 'homo_neanderthalensis.title',
+      latinNameKey: 'homo_neanderthalensis.latin_name',
+      dateOfOriginKey: 'homo_neanderthalensis.date_of_origin',
+      whoDidItComeFromKey: 'homo_neanderthalensis.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_neanderthalensis.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_neanderthalensis.did_he_come_out_of_Africa',
+      imgPath: neanderthalImg,
+      imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/homo-neanderthalensis',
       imgAuthor: '',
       handleOptions: {
         top:{
