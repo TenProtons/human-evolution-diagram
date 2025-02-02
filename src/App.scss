@@ -1,6 +1,5 @@
 #root {
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
+
 }
 
 .app {
@@ -14,6 +13,10 @@
   &__controls {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__header {
+    padding: var(--16);
   }
 }
 

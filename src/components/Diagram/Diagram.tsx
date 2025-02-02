@@ -21,12 +21,6 @@ const nodeTypes = {
 
 const Diagram: FC = () => {
   const { t } = useTranslation();
-  // const edges: Edge[] = useMemo(() => {
-  //   return initialEdges.map(edge => ({
-  //     ...edge,
-  //     label: t(edge.labelKey || ''),
-  //   }));
-  // }, [t]);
   const nodes: Node<MyNodeData>[] = useMemo(() => {
     return cardsData.map((card, index) => ({
       ...card,
@@ -45,7 +39,7 @@ const Diagram: FC = () => {
   }, [t]);
 
   return (
-    <div style={{ width: '100%', height: '100%' }}>
+    <div className='diagram' style={{ width: '100%', height: '100%' }}>
       <ReactFlowProvider>
         <ReactFlow
           nodeTypes={nodeTypes}
