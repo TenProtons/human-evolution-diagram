@@ -190,15 +190,23 @@ const resources = {
         "date_of_origin": "близько 300 тисяч років тому",
         "who_did_it_come_from": "Гайдельберзька людина",
         "who_arose_from_him": "сучасні люди",
-        "did_he_come_out_of_Africa": "так, кілька хвиль міграцій в періоді 130 - 45 тисяч років тому",
+        "did_he_come_out_of_Africa": "так - кілька хвиль міграцій в періоді 130 - 45 тисяч років тому",
       },
       homo_neanderthalensis: {
-        "title": "Людина розумна",
+        "title": "Неандерталець",
         "latin_name": "Homo neanderthalensis",
-        "date_of_origin": "близько 400 тисяч років тому",
+        "date_of_origin": "близько 430 тисяч років тому",
         "who_did_it_come_from": "Гайдельберзька людина",
         "who_arose_from_him": "тупикова гілка",
         "did_he_come_out_of_Africa": "ні - жили в Європі",
+      },
+      homo_denisova: {
+        "title": "Денисівська людина",
+        "latin_name": "Homo denisova",
+        "date_of_origin": "близько 370 тисяч років тому",
+        "who_did_it_come_from": "Гайдельберзька людина",
+        "who_arose_from_him": "тупикова гілка",
+        "did_he_come_out_of_Africa": "ні - жили в Сибіру та Східній Азії",
       },
     }
   }

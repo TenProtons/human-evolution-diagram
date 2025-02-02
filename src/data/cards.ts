@@ -11,6 +11,7 @@ import homoАloresiensisImg from '../assets/img/homo-floresiensis.jpg';
 import homoHeidelbergensisImg from '../assets/img/homo-heidelbergensis.jpg';
 import homoІapiensImg from '../assets/img/homo-sapiens.jpg';
 import neanderthalImg from '../assets/img/neanderthal.jpg';
+import homoDenisovensislImg from '../assets/img/homo-denisovensis.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
@@ -303,6 +304,27 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_neanderthalensis.did_he_come_out_of_Africa',
       imgPath: neanderthalImg,
       imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/homo-neanderthalensis',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        }
+      }
+    },
+  },
+  {
+    id: '113',
+    position: { x: -1100, y: timelineLines.homo_neanderthalensis.y},
+    data: {
+      labelKey: 'homo_denisova.title',
+      latinNameKey: 'homo_denisova.latin_name',
+      dateOfOriginKey: 'homo_denisova.date_of_origin',
+      whoDidItComeFromKey: 'homo_denisova.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_denisova.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_denisova.did_he_come_out_of_Africa',
+      imgPath: homoDenisovensislImg,
+      imgSource: 'https://www.wsj.com/articles/a-short-history-of-humanity-review-lost-cousins-11618004888',
       imgAuthor: '',
       handleOptions: {
         top:{
