@@ -33,12 +33,29 @@ export default function TimeLinesOverlay() {
             />
             <text
               x={-2000}
-              y={line.y - -75}
+              y={line.y - 25}
               fontSize={72}
+              fontWeight={700}
               fill="var(--text-color)"
             >
-              {t(line.label)}
+              {t(line.label)} {t("labels.time_ago")}
             </text>
+            <foreignObject
+              x={-2000}
+              y={line.y - 10}
+              width={1300}
+              height={1000}
+            >
+              <p style={{
+                  fontSize: "64px",
+                  color: "var(--text-color)",
+                  whiteSpace: "normal",
+                  wordWrap: "break-word",
+                }}
+              >
+                {t(line.text)}
+              </p>
+            </foreignObject>
           </g>
         ))}
       </g>
