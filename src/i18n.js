@@ -137,7 +137,6 @@ const resources = {
         "who_arose_from_him": "evolutionary dead end",
         "did_he_come_out_of_Africa": "no - they lived in Siberia and East Asia"
       }
-      
     }
   },
   uk: {

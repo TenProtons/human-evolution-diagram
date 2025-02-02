@@ -16,7 +16,9 @@
   }
 
   &__header {
+    display: flex;
     padding: var(--16);
+    justify-content: space-between;
   }
 }
 

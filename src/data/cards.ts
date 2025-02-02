@@ -27,6 +27,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
       imgPath: chlcaImg,
       imgSource: 'ai_origin',
+      infoSource: 'https://en.wikipedia.org/wiki/Last_common_ancestor_of_humans_and_chimpanzees',
       imgAuthor: '',
       handleOptions: {
         bottom:{
@@ -48,6 +49,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'sahelanthropus.did_he_come_out_of_Africa',
       imgPath: sahelanthropusImg,
       imgSource: 'ai_origin',
+      infoSource: 'https://en.wikipedia.org/wiki/Sahelanthropus',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -73,6 +75,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: questionMarkImg,
       imgSource: 'ai_origin',
+      infoSource: 'https://en.wikipedia.org/wiki/Pan_(genus)',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -97,6 +100,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: chimpanzeeImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Schimpanse_Zoo_Leipzig.jpg',
+      infoSource: 'https://en.wikipedia.org/wiki/Common_chimpanzee',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -117,6 +121,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: bonoboImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Apeldoorn_Apenheul_zoo_Bonobo.jpg',
+      infoSource: 'https://en.wikipedia.org/wiki/Bonobo',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -138,6 +143,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'ardipithecus.did_he_come_out_of_Africa',
       imgPath: ardipithecusImg,
       imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/ardipithecus-ramidus',
+      infoSource: 'https://en.wikipedia.org/wiki/Ardipithecus_ramidus',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -163,6 +169,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'australopithecus_afarensis.did_he_come_out_of_Africa',
       imgPath: australopithecusAfarensisImg,
       imgSource: 'https://www.donsmaps.com/lucy.html',
+      infoSource: 'https://en.wikipedia.org/wiki/Australopithecus_afarensis',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -188,6 +195,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_habilis.did_he_come_out_of_Africa',
       imgPath: homoHabilisImg,
       imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/homo-habilis',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_habilis',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -213,6 +221,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_erectus.did_he_come_out_of_Africa',
       imgPath: homoErectusImg,
       imgSource: 'https://www.britannica.com/topic/Homo-erectus/Body-structure',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_erectus',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -237,6 +246,7 @@ export const cardsData = [
       whoAroseFromHimKey: 'homo_floresiensis.who_arose_from_him',
       imgPath: homoАloresiensisImg,
       imgSource: 'https://www.worldhistory.org/image/6740/homo-floresiensis-reconstruction/',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_floresiensis',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -258,6 +268,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_heidelbergensis.did_he_come_out_of_Africa',
       imgPath: homoHeidelbergensisImg,
       imgSource: 'https://www.worldhistory.org/image/6442/homo-heidelbergensis-reconstruction/#google_vignette',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_heidelbergensis',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -283,6 +294,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_sapiens.did_he_come_out_of_Africa',
       imgPath: homoІapiensImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_sapiens',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -304,6 +316,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_neanderthalensis.did_he_come_out_of_Africa',
       imgPath: neanderthalImg,
       imgSource: 'https://humanorigins.si.edu/evidence/human-fossils/species/homo-neanderthalensis',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_neanderthalensis',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -325,6 +338,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_denisova.did_he_come_out_of_Africa',
       imgPath: homoDenisovensislImg,
       imgSource: 'https://www.wsj.com/articles/a-short-history-of-humanity-review-lost-cousins-11618004888',
+      infoSource: 'https://en.wikipedia.org/wiki/Homo_denisova',
       imgAuthor: '',
       handleOptions: {
         top:{
