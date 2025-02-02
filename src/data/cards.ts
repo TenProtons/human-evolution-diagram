@@ -9,6 +9,7 @@ import homoHabilisImg from '../assets/img/homo-habilis.jpg';
 import homoErectusImg from '../assets/img/homo-erectus.jpg';
 import homoАloresiensisImg from '../assets/img/homo-floresiensis.jpg';
 import homoHeidelbergensisImg from '../assets/img/homo-heidelbergensis.jpg';
+import homoІapiensImg from '../assets/img/homo-sapiens.jpg';
 import { timelineLines } from './timelineLines';
 
 export const cardsData = [
@@ -255,6 +256,31 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_heidelbergensis.did_he_come_out_of_Africa',
       imgPath: homoHeidelbergensisImg,
       imgSource: 'https://www.worldhistory.org/image/6442/homo-heidelbergensis-reconstruction/#google_vignette',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        }
+      }
+    },
+  },
+  {
+    id: '111',
+    position: { x: -600, y: timelineLines.homo_sapiens.y},
+    data: {
+      labelKey: 'homo_sapiens.title',
+      latinNameKey: 'homo_sapiens.latin_name',
+      dateOfOriginKey: 'homo_sapiens.date_of_origin',
+      whoDidItComeFromKey: 'homo_sapiens.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_sapiens.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_sapiens.did_he_come_out_of_Africa',
+      imgPath: homoІapiensImg,
+      imgSource: 'https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg',
       imgAuthor: '',
       handleOptions: {
         top:{
