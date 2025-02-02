@@ -31,7 +31,6 @@ const resources = {
         "first_exodus_Africa": "🦶🏼 The first exodus from Africa",
         "fireDiscovery1.5": "🔥 First evidence of fire use in Swartkrans Cave, South Africa",
       },
-      // CHLCA
       chlca: {
         "title": "Last common ancestor between chimpanzees and humans (CHLCA)",
         "latin_name": "(no exact name, possibly similar to Pan and Homo)",
@@ -40,8 +39,6 @@ const resources = {
         "who_arose_from_him": "Sahelanthropus, chimpanzee ancestors",
         "did_he_come_out_of_Africa": "no",
       },
-
-      // Pan (genus)
       panGenus: {
         "title": "Common ancestor of chimpanzees and bonobos",
         "latin_name": "Pan (genus)",
@@ -49,8 +46,6 @@ const resources = {
         "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
         "who_arose_from_him": "Chimpanzees and bonobos",
       },
-
-      // Sahelanthropus
       sahelanthropus: {
         "title": "Sahelanthropus",
         "latin_name": "Sahelanthropus tchadensis",
@@ -59,24 +54,18 @@ const resources = {
         "who_arose_from_him": "Ardipithecus",
         "did_he_come_out_of_Africa": "no",
       },
-
-      // Chimpanzee
       chimpanzee: {
         "title": "Chimpanzee",
         "latin_name": "Pan troglodytes",
         "date_of_origin": "about 1-2 million years ago",
         "who_did_it_come_from": "common ancestor of chimpanzees and bonobos",
       },
-
-      // Bonobo
       bonobo: {
         "title": "Bonobo",
         "latin_name": "Pan paniscus",
         "date_of_origin": "about 1-2 million years ago",
         "who_did_it_come_from": "common ancestor of chimpanzees and bonobos",
       },
-
-      // Ardipithecus
       ardipithecus: {
         "title": "Ardipithecus",
         "latin_name": "Ardipithecus ramidus",
@@ -85,6 +74,70 @@ const resources = {
         "who_arose_from_him": "Australopithecus",
         "did_he_come_out_of_Africa": "no",
       },
+      australopithecus_afarensis: {
+        "title": "Australopithecine",
+        "latin_name": "Australopithecus afarensis",
+        "date_of_origin": "approximately 3.9 - 2.9 million years ago",
+        "who_did_it_come_from": "Ardipithecus",
+        "who_arose_from_him": "Handy Man",
+        "did_he_come_out_of_Africa": "no"
+      },
+      homo_habilis: {
+        "title": "Handy Man",
+        "latin_name": "Homo habilis",
+        "date_of_origin": "approximately 2.4 - 1.4 million years ago",
+        "who_did_it_come_from": "Australopithecus",
+        "who_arose_from_him": "Upright Man",
+        "did_he_come_out_of_Africa": "no"
+      },
+      homo_erectus: {
+        "title": "Upright Man",
+        "latin_name": "Homo erectus",
+        "date_of_origin": "approximately 1.9 million years ago",
+        "who_did_it_come_from": "Handy Man",
+        "who_arose_from_him": "Heidelberg Man and Flores Man (Hobbit)",
+        "did_he_come_out_of_Africa": "yes - they migrated to Asia and Europe approximately 1.8 million years ago"
+      },
+      homo_floresiensis: {
+        "title": "Flores Man (Hobbit)",
+        "latin_name": "Homo floresiensis",
+        "date_of_origin": "approximately 700 thousand years ago",
+        "who_did_it_come_from": "descended from early Asian Upright Man",
+        "who_arose_from_him": "evolutionary dead end"
+      },
+      homo_heidelbergensis: {
+        "title": "Heidelberg Man",
+        "latin_name": "Homo heidelbergensis",
+        "date_of_origin": "approximately 700 - 600 thousand years ago",
+        "who_did_it_come_from": "Upright Man",
+        "who_arose_from_him": "Denisovan, Neanderthal, and Wise Man",
+        "did_he_come_out_of_Africa": "Shortly after their appearance—around 700 - 600 thousand years ago - they began migrating out of Africa to Europe and possibly parts of Western Asia."
+      },
+      homo_sapiens: {
+        "title": "Wise Man",
+        "latin_name": "Homo sapiens",
+        "date_of_origin": "approximately 300 thousand years ago",
+        "who_did_it_come_from": "Heidelberg Man",
+        "who_arose_from_him": "modern humans",
+        "did_he_come_out_of_Africa": "yes - several waves of migration between approximately 130 - 45 thousand years ago"
+      },
+      homo_neanderthalensis: {
+        "title": "Neanderthal",
+        "latin_name": "Homo neanderthalensis",
+        "date_of_origin": "approximately 430 thousand years ago",
+        "who_did_it_come_from": "Heidelberg Man",
+        "who_arose_from_him": "evolutionary dead end",
+        "did_he_come_out_of_Africa": "no - they lived in Europe"
+      },
+      homo_denisova: {
+        "title": "Denisovan",
+        "latin_name": "Homo denisova",
+        "date_of_origin": "approximately 370 thousand years ago",
+        "who_did_it_come_from": "Heidelberg Man",
+        "who_arose_from_him": "evolutionary dead end",
+        "did_he_come_out_of_Africa": "no - they lived in Siberia and East Asia"
+      }
+      
     }
   },
   uk: {
