@@ -315,7 +315,7 @@ export const cardsData = [
   },
   {
     id: '113',
-    position: { x: -1100, y: timelineLines.homo_neanderthalensis.y},
+    position: { x: 500, y: timelineLines.homo_neanderthalensis.y},
     data: {
       labelKey: 'homo_denisova.title',
       latinNameKey: 'homo_denisova.latin_name',
