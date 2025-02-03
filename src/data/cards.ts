@@ -27,7 +27,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'chlca.did_he_come_out_of_Africa',
       imgPath: chlcaImg,
       imgSource: 'ai_origin',
-      infoSource: 'https://en.wikipedia.org/wiki/Last_common_ancestor_of_humans_and_chimpanzees',
+      infoSource: 'https://www.science.org/doi/abs/10.1126/science.abb4363',
       imgAuthor: '',
       handleOptions: {
         bottom:{
@@ -49,7 +49,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'sahelanthropus.did_he_come_out_of_Africa',
       imgPath: sahelanthropusImg,
       imgSource: 'ai_origin',
-      infoSource: 'https://en.wikipedia.org/wiki/Sahelanthropus',
+      infoSource: 'https://thesciencesurvey.com/spotlight/2024/07/04/sahelanthropus-tchadensis-a-window-into-human-evolution/',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -75,7 +75,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: questionMarkImg,
       imgSource: 'ai_origin',
-      infoSource: 'https://en.wikipedia.org/wiki/Pan_(genus)',
+      infoSource: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4943195/',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -100,7 +100,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: chimpanzeeImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Schimpanse_Zoo_Leipzig.jpg',
-      infoSource: 'https://en.wikipedia.org/wiki/Common_chimpanzee',
+      infoSource: 'https://academic.oup.com/gbe/article/11/4/1178/5371072',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -121,7 +121,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: bonoboImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Apeldoorn_Apenheul_zoo_Bonobo.jpg',
-      infoSource: 'https://en.wikipedia.org/wiki/Bonobo',
+      infoSource: 'https://academic.oup.com/gbe/article/11/4/1178/5371072',
       imgAuthor: '',
       handleOptions: {
         top:{

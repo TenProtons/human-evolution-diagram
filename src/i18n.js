@@ -35,7 +35,7 @@ const resources = {
       chlca: {
         "title": "Last common ancestor between chimpanzees and humans (CHLCA)",
         "latin_name": "(no exact name, possibly similar to Pan and Homo)",
-        "date_of_origin": "about 7-8 million years ago",
+        "date_of_origin": "about 9.3 - 6.5 million years ago",
         "who_did_it_come_from": "early hominins and chimpanzee ancestors",
         "who_arose_from_him": "Sahelanthropus, chimpanzee ancestors",
         "did_he_come_out_of_Africa": "no",
@@ -58,13 +58,13 @@ const resources = {
       chimpanzee: {
         "title": "Chimpanzee",
         "latin_name": "Pan troglodytes",
-        "date_of_origin": "about 1-2 million years ago",
+        "date_of_origin": "about 2 - 1 million years ago",
         "who_did_it_come_from": "common ancestor of chimpanzees and bonobos",
       },
       bonobo: {
         "title": "Bonobo",
         "latin_name": "Pan paniscus",
-        "date_of_origin": "about 1-2 million years ago",
+        "date_of_origin": "about 2 - 1 million years ago",
         "who_did_it_come_from": "common ancestor of chimpanzees and bonobos",
       },
       ardipithecus: {
@@ -170,7 +170,7 @@ const resources = {
       chlca: {
         "title": "Останній спільний предок між шимпанзе та людиною (CHLCA)",
         "latin_name": "(немає точної назви, можливо схожі на Pan та Homo)",
-        "date_of_origin": "близько 7-8 млн років тому",
+        "date_of_origin": "близько 9.3 - 6.5 млн років тому",
         "who_did_it_come_from": "ранні гомініни та предки шимпанзе",
         "who_arose_from_him": "Сахелантроп, предки шимпанзе",
         "did_he_come_out_of_Africa": "ні",
@@ -193,13 +193,13 @@ const resources = {
       chimpanzee: {
         "title": "Шимпанзе",
         "latin_name": "Pan troglodytes",
-        "date_of_origin": "близько 1-2 млн років тому",
+        "date_of_origin": "близько 2 - 1 млн років тому",
         "who_did_it_come_from": "спільний предок шимпанзе та бонобо",
       },
       bonobo: {
         "title": "Бонобо",
         "latin_name": "Pan paniscus",
-        "date_of_origin": "близько 1-2 млн років тому",
+        "date_of_origin": "близько 2 - 1 млн років тому",
         "who_did_it_come_from": "спільний предок шимпанзе та бонобо",
       },
       ardipithecus: {
