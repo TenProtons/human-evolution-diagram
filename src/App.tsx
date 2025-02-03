@@ -25,7 +25,7 @@ function App() {
     <div className="app">
       <section className="app__controls">
         <button className="regular-button" onClick={toggleLanguage}>
-          {i18n.language === "en" ? "Ukrainian" : "English"}
+          {i18n.language === "en" ? "Українська" : "English"}
         </button>
         <button className="regular-button" onClick={() => setIsDarkMode(!isDarkMode)}>
           {isDarkMode ? "Light Theme" : "Dark Theme"}
@@ -37,7 +37,7 @@ function App() {
           <h1>{t("title")}</h1>
           <p>{t("subtitle")}</p>
         </div>
-        <button onClick={() => setModalOpen(!isModalOpen)}>❔</button>
+        <button className="app__open-modal regular-button" onClick={() => setModalOpen(!isModalOpen)}>❔</button>
       </section>
 
       {isModalOpen && <InfoModal onClose={() => setModalOpen(false)} />}

@@ -5,35 +5,42 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); // slightly darkened background
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-}
 
-/* Central container of the modal */
-.info-modal__container {
-  width: 600px;
-  height: 600px;
-  background-color: #fff;
-  padding: 16px;
-  box-sizing: border-box;
-  overflow-y: auto; // vertical scrollbar if needed
-  position: relative; // for absolute positioning of the close button
-  border-radius: 4px; // optional rounded corners
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    gap: var(--16);
+    margin: var(--16);
+    padding: var(--16);
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-8);
+  }
 
-/* Close button in the upper-right corner */
-.info-modal__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  line-height: 1;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__close {
+    width: fit-content;
+    margin-left: auto;
+    padding: 0px 6px;
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
 
 /* Individual card styling */
