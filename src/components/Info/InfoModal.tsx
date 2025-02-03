@@ -13,7 +13,6 @@ const InfoModal: FC<InfoModalProps> = ({ onClose }) => {
   return (
     <div className="info-modal">
       <div className="info-modal__container">
-        {/* Close button */}
         <button
           className="info-modal__close regular-button"
           onClick={onClose}
@@ -30,16 +29,30 @@ const InfoModal: FC<InfoModalProps> = ({ onClose }) => {
                 src={card.data.imgPath}
                 alt={t(card.data.labelKey)}
               />
-              <p className="info-modal__link-wrapper">
+              <div className="info-modal__link-wrapper">
                 <a
                   className="info-modal__link"
                   href={card.data.infoSource}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {card.data.infoSource}
+                  {t("info_source")}
                 </a>
-              </p>
+                {card.data.imgSource.includes("https") ? (
+                  <a
+                    className="info-modal__link"
+                    href={card.data.imgSource}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("img_source")}
+                  </a>
+                ) : (
+                  <span>
+                    {t("img_source")}: {t(card.data.imgSource)}
+                  </span>
+                )}
+              </div>
             </div>
           ))}
         </div>

@@ -9,9 +9,6 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
     const image = data.imgPath ? 
       <img src={data.imgPath} alt={data.label} className="card__image" /> : 
       <span className="card__symbol-question-mark">?</span>;
-    const imageSource = data.imgSource?.includes('https') ?
-      data.imgSource :
-      t(data.imgSource || '');
 
   return (
     <div className="card">
@@ -23,8 +20,6 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
         {data.whoAroseFromHim && <p><b>{ t('who_arose_from_him') }:</b> {data.whoAroseFromHim}</p>}
         {data.didHeComeOutOfAfrica && <p><b>{ t('did_he_come_out_of_Africa') }:</b> {data.didHeComeOutOfAfrica}</p>}
         {image}
-        {data.imgSource && <p><b>{ t('img_source') }:</b> <span className="card__source">{imageSource}</span></p>}
-        {data.imgAuthor && <p><b>{ t('img_author') }:</b> <span className="card__author">{data.imgAuthor}</span></p>}
       </div>
       
       {data.handleOptions?.top && <Handle type={data.handleOptions?.top.type as HandleType} position={data.handleOptions?.top.position} />}
