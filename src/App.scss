@@ -8,7 +8,6 @@
   height: 100dvh;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.2s ease, color 0.2s ease;
 
   &__controls {
     display: flex;
@@ -23,27 +22,14 @@
   }
 
   &__open-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    min-width: 50px;
+    width: 50px;
     height: 50px;
     line-height: 1.3rem;
     font-size: 1.3rem;
     outline: none;
-    border: none;
-  }
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
   }
 }
