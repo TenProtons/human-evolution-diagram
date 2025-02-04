@@ -37,7 +37,7 @@ function App() {
           <h1>{t("title")}</h1>
           <p>{t("subtitle")}</p>
         </div>
-        <button className="app__open-modal regular-button" onClick={() => setModalOpen(!isModalOpen)}>❔</button>
+        <button className="app__open-modal regular-button" onClick={() => setModalOpen(!isModalOpen)}>?</button>
       </section>
 
       {isModalOpen && <InfoModal onClose={() => setModalOpen(false)} />}
