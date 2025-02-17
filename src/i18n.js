@@ -186,11 +186,11 @@ const resources = {
         "who_arose_from_him": "шимпанзе та бонобо"
       },
       stemHominids: {
-        "title": "Стволові гомініди",
+        "title": "Стволова група гомінід",
         "latin_name": "Hominidae (стволова група)",
         "date_of_origin": "близько 7.5 – 7.0 млн років тому",
         "who_did_it_come_from": "Останній спільний предок шимпанзе та людини (CHLCA)",
-        "who_arose_from_him": "Сахелантроп та ранні гомінінські лінії"
+        "who_arose_from_him": "Сахелантроп та ранні лінії гомінінів",
       },
       sahelanthropus: {
         "title": "Сахелантроп",
