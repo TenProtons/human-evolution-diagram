@@ -37,7 +37,7 @@ const resources = {
         "latin_name": "(no exact name, possibly similar to Pan and Homo)",
         "date_of_origin": "7.5 - 6.5 million years ago",
         "who_did_it_come_from": "early hominins and chimpanzee ancestors",
-        "who_arose_from_him": "Sahelanthropus, chimpanzee ancestors",
+        "who_arose_from_him": "Stem Hominids and chimpanzee ancestors",
         "did_he_come_out_of_Africa": "no",
       },
       panGenus: {
@@ -59,7 +59,7 @@ const resources = {
         "latin_name": "Sahelanthropus tchadensis",
         "date_of_origin": "7.2 - 6.8 million years ago",
         "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
-        "who_arose_from_him": "Ardipithecus",
+        "who_arose_from_him": "Uncertain—may represent a sister lineage to hominins and African apes",
         "did_he_come_out_of_Africa": "no",
       },
       chimpanzee: {
