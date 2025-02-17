@@ -33,13 +33,17 @@ export const cardsData = [
         bottom:{
           type: 'source',
           position: 'bottom'
+        },
+        left:{
+          type: 'source',
+          position: 'left'
         }
       }
     },
   },
   {
     id: '101',
-    position: { x: -600, y: timelineLines.sahelanthropus_panGenus.y },
+    position: { x: 100, y: timelineLines.sahelanthropus.y },
     data: {
       labelKey: 'sahelanthropus.title',
       latinNameKey: 'sahelanthropus.latin_name',
@@ -52,20 +56,16 @@ export const cardsData = [
       infoSource: 'https://thesciencesurvey.com/spotlight/2024/07/04/sahelanthropus-tchadensis-a-window-into-human-evolution/',
       imgAuthor: '',
       handleOptions: {
-        top:{
+        left:{
           type: 'target',
-          position: 'top'
-        },
-        bottom:{
-          type: 'source',
-          position: 'bottom'
+          position: 'left'
         }
       }
     },
   },
   {
     id: '102',
-    position: { x: 1850, y: timelineLines.sahelanthropus_panGenus.y },
+    position: { x: 1850, y: timelineLines.homo_erectus__panGenus.y },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
@@ -211,7 +211,7 @@ export const cardsData = [
   },
   {
     id: '108',
-    position: { x: -600, y: timelineLines.homo_erectus.y},
+    position: { x: -600, y: timelineLines.homo_erectus__panGenus.y},
     data: {
       labelKey: 'homo_erectus.title',
       latinNameKey: 'homo_erectus.latin_name',
@@ -330,12 +330,12 @@ export const cardsData = [
     id: '113',
     position: { x: 500, y: timelineLines.homo_neanderthalensis.y},
     data: {
-      labelKey: 'homo_denisova.title',
-      latinNameKey: 'homo_denisova.latin_name',
-      dateOfOriginKey: 'homo_denisova.date_of_origin',
-      whoDidItComeFromKey: 'homo_denisova.who_did_it_come_from',
-      whoAroseFromHimKey: 'homo_denisova.who_arose_from_him',
-      didHeComeOutOfAfricaKey: 'homo_denisova.did_he_come_out_of_Africa',
+      labelKey: 'homo_denisovensis.title',
+      latinNameKey: 'homo_denisovensis.latin_name',
+      dateOfOriginKey: 'homo_denisovensis.date_of_origin',
+      whoDidItComeFromKey: 'homo_denisovensis.who_did_it_come_from',
+      whoAroseFromHimKey: 'homo_denisovensis.who_arose_from_him',
+      didHeComeOutOfAfricaKey: 'homo_denisovensis.did_he_come_out_of_Africa',
       imgPath: homoDenisovensislImg,
       imgSource: 'https://www.wsj.com/articles/a-short-history-of-humanity-review-lost-cousins-11618004888',
       infoSource: 'https://en.wikipedia.org/wiki/Homo_denisova',
@@ -344,6 +344,35 @@ export const cardsData = [
         top:{
           type: 'target',
           position: 'top'
+        }
+      }
+    },
+  },
+  {
+    id: '114',
+    position: { x: -600, y: timelineLines.panGenus__stemHominids.y },
+    data: {
+      labelKey: 'stemHominids.title',
+      latinNameKey: 'stemHominids.latin_name',
+      dateOfOriginKey: 'stemHominids.date_of_origin',
+      whoDidItComeFromKey: 'stemHominids.who_did_it_come_from',
+      whoAroseFromHimKey: 'stemHominids.who_arose_from_him',
+      didHeComeOutOfAfricaKey: null,
+      imgPath: questionMarkImg,
+      infoSource: '',
+      imgAuthor: '',
+      handleOptions: {
+        top:{
+          type: 'target',
+          position: 'top'
+        },
+        bottom:{
+          type: 'source',
+          position: 'bottom'
+        },
+        right:{
+          type: 'source',
+          position: 'right'
         }
       }
     },

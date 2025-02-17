@@ -35,7 +35,7 @@ const resources = {
       chlca: {
         "title": "Last common ancestor between chimpanzees and humans (CHLCA)",
         "latin_name": "(no exact name, possibly similar to Pan and Homo)",
-        "date_of_origin": "about 9.3 - 6.5 million years ago",
+        "date_of_origin": "7.5 - 6.5 million years ago",
         "who_did_it_come_from": "early hominins and chimpanzee ancestors",
         "who_arose_from_him": "Sahelanthropus, chimpanzee ancestors",
         "did_he_come_out_of_Africa": "no",
@@ -43,14 +43,21 @@ const resources = {
       panGenus: {
         "title": "Common ancestor of chimpanzees and bonobos",
         "latin_name": "Pan (genus)",
-        "date_of_origin": "about 7 million years ago",
+        "date_of_origin": "2 - 1 million years ago",
         "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
         "who_arose_from_him": "Chimpanzees and bonobos",
+      },
+      stemHominids: {
+        "title": "Stem Hominids",
+        "latin_name": "Hominidae (stem group)",
+        "date_of_origin": "7.5 - 7.0 million years ago",
+        "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor (CHLCA)",
+        "who_arose_from_him": "Sahelanthropus and early Hominina lineages",
       },
       sahelanthropus: {
         "title": "Sahelanthropus",
         "latin_name": "Sahelanthropus tchadensis",
-        "date_of_origin": "about 7 million years ago",
+        "date_of_origin": "7.2 - 6.8 million years ago",
         "who_did_it_come_from": "Chimpanzee-Human Last Common Ancestor",
         "who_arose_from_him": "Ardipithecus",
         "did_he_come_out_of_Africa": "no",
@@ -58,19 +65,19 @@ const resources = {
       chimpanzee: {
         "title": "Chimpanzee",
         "latin_name": "Pan troglodytes",
-        "date_of_origin": "about 2 - 1 million years ago",
+        "date_of_origin": "2 - 1 million years ago",
         "who_did_it_come_from": "common ancestor of chimpanzees and bonobos",
       },
       bonobo: {
         "title": "Bonobo",
         "latin_name": "Pan paniscus",
-        "date_of_origin": "about 2 - 1 million years ago",
+        "date_of_origin": "2 - 1 million years ago",
         "who_did_it_come_from": "common ancestor of chimpanzees and bonobos",
       },
       ardipithecus: {
         "title": "Ardipithecus",
         "latin_name": "Ardipithecus ramidus",
-        "date_of_origin": "about 4.4 million years ago",
+        "date_of_origin": "around 4.4 million years ago",
         "who_did_it_come_from": "Sahelanthropus or similar early hominins",
         "who_arose_from_him": "Australopithecus",
         "did_he_come_out_of_Africa": "no",
@@ -78,7 +85,7 @@ const resources = {
       australopithecus_afarensis: {
         "title": "Australopithecine",
         "latin_name": "Australopithecus afarensis",
-        "date_of_origin": "approximately 3.9 - 2.9 million years ago",
+        "date_of_origin": "3.9 - 2.9 million years ago",
         "who_did_it_come_from": "Ardipithecus",
         "who_arose_from_him": "Handy Man",
         "did_he_come_out_of_Africa": "no"
@@ -86,7 +93,7 @@ const resources = {
       homo_habilis: {
         "title": "Handy Man",
         "latin_name": "Homo habilis",
-        "date_of_origin": "approximately 2.4 - 1.4 million years ago",
+        "date_of_origin": "2.4 - 1.4 million years ago",
         "who_did_it_come_from": "Australopithecus",
         "who_arose_from_him": "Upright Man",
         "did_he_come_out_of_Africa": "no"
@@ -130,9 +137,9 @@ const resources = {
         "who_arose_from_him": "evolutionary dead end",
         "did_he_come_out_of_Africa": "no - they lived in Europe"
       },
-      homo_denisova: {
+      homo_denisovensis: {
         "title": "Denisovan",
-        "latin_name": "Homo denisova",
+        "latin_name": "Homo denisovensis",
         "date_of_origin": "approximately 370 thousand years ago",
         "who_did_it_come_from": "Heidelberg Man",
         "who_arose_from_him": "evolutionary dead end",
@@ -170,7 +177,7 @@ const resources = {
       chlca: {
         "title": "Останній спільний предок між шимпанзе та людиною (CHLCA)",
         "latin_name": "(немає точної назви, можливо схожі на Pan та Homo)",
-        "date_of_origin": "близько 9.3 - 6.5 млн років тому",
+        "date_of_origin": "близько 7.5 - 6.5 млн років тому",
         "who_did_it_come_from": "ранні гомініни та предки шимпанзе",
         "who_arose_from_him": "Сахелантроп, предки шимпанзе",
         "did_he_come_out_of_Africa": "ні",
@@ -178,14 +185,21 @@ const resources = {
       panGenus: {
         "title": "Спільний предок шимпанзе та бонобо",
         "latin_name": "Pan (genus)",
-        "date_of_origin": "близько 7 млн років тому",
+        "date_of_origin": "2 - 1 млн років тому",
         "who_did_it_come_from": "Останній спільний предок між шимпанзе та людиною",
         "who_arose_from_him": "Шимпанзе та Бонобо",
+      },
+      stemHominids: {
+        "title": "Stem Hominids",
+        "latin_name": "",
+        "date_of_origin": "",
+        "who_did_it_come_from": "",
+        "who_arose_from_him": "",
       },
       sahelanthropus: {
         "title": "Сахелантроп",
         "latin_name": "Sahelanthropus tchadensis",
-        "date_of_origin": "близько 7 млн років тому",
+        "date_of_origin": "7.2 - 6.8 млн років тому",
         "who_did_it_come_from": "Останній спільний предок між шимпанзе та людиною",
         "who_arose_from_him": "Ардипітек",
         "did_he_come_out_of_Africa": "ні",
@@ -213,7 +227,7 @@ const resources = {
       australopithecus_afarensis: {
         "title": "Австралопітек",
         "latin_name": "Australopithecus afarensis",
-        "date_of_origin": "близько 3.9-2.9 млн років тому",
+        "date_of_origin": "3.9 - 2.9 млн років тому",
         "who_did_it_come_from": "Ардипітек",
         "who_arose_from_him": "Людина уміла",
         "did_he_come_out_of_Africa": "ні",
@@ -221,7 +235,7 @@ const resources = {
       homo_habilis: {
         "title": "Людина уміла",
         "latin_name": "Homo habilis",
-        "date_of_origin": "близько 2.4-1.4 млн років тому",
+        "date_of_origin": "2.4 - 1.4 млн років тому",
         "who_did_it_come_from": "Австралопітек",
         "who_arose_from_him": "Людина прямоходяча",
         "did_he_come_out_of_Africa": "ні",
@@ -265,7 +279,7 @@ const resources = {
         "who_arose_from_him": "тупикова гілка",
         "did_he_come_out_of_Africa": "ні - жили в Європі",
       },
-      homo_denisova: {
+      homo_denisovensis: {
         "title": "Денисівська людина",
         "latin_name": "Homo denisova",
         "date_of_origin": "близько 370 тисяч років тому",

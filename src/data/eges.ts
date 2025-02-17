@@ -26,8 +26,9 @@ const sharedEdgeProps = {
 export const initialEdges = [
   {
     ...sharedEdgeProps,
-    id: 'e100-101',
-    source: '100',
+    id: 'e114-101',
+    source: '114',
+    sourceHandle: 'right',
     target: '101',
   },
   {
@@ -101,5 +102,12 @@ export const initialEdges = [
     id: 'e110-113',
     source: '110',
     target: '113',
+  },
+  {
+    ...sharedEdgeProps,
+    id: 'e100-114',
+    source: '100',
+    sourceHandle: 'left',
+    target: '114',
   },
 ];

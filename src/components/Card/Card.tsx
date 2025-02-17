@@ -22,10 +22,34 @@ const Card: FC<NodeProps<MyNodeData>> = ({ data }) => {
         {image}
       </div>
       
-      {data.handleOptions?.top && <Handle type={data.handleOptions?.top.type as HandleType} position={data.handleOptions?.top.position} />}
-      {data.handleOptions?.bottom && <Handle type={data.handleOptions?.bottom.type as HandleType} position={data.handleOptions?.bottom.position} />}
-      {data.handleOptions?.right && <Handle type={data.handleOptions?.right.type as HandleType} position={data.handleOptions?.right.position} />}
-      {data.handleOptions?.left && <Handle type={data.handleOptions?.left.type as HandleType} position={data.handleOptions?.left.position} />}
+      {data.handleOptions?.top && (
+        <Handle
+          id="top"
+          type={data.handleOptions.top.type as HandleType}
+          position={data.handleOptions.top.position}
+        />
+      )}
+      {data.handleOptions?.bottom && (
+        <Handle
+          id="bottom"
+          type={data.handleOptions.bottom.type as HandleType}
+          position={data.handleOptions.bottom.position}
+        />
+      )}
+      {data.handleOptions?.right && (
+        <Handle
+          id="right"
+          type={data.handleOptions.right.type as HandleType}
+          position={data.handleOptions.right.position}
+        />
+      )}
+      {data.handleOptions?.left && (
+        <Handle
+          id="left"
+          type={data.handleOptions.left.type as HandleType}
+          position={data.handleOptions.left.position}
+        />
+      )}
     </div>
   );
 };
