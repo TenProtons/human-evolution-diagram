@@ -32,7 +32,7 @@ export default function TimeLinesOverlay() {
               strokeDasharray="20,20"
             />
             <text
-              x={-2000}
+              x={-2100}
               y={line.y - 25}
               fontSize={72}
               fontWeight={700}
@@ -41,9 +41,9 @@ export default function TimeLinesOverlay() {
               {t(line.label)} {t("labels.time_ago")}
             </text>
             <foreignObject
-              x={-2000}
+              x={-2100}
               y={line.y - 10}
-              width={1300}
+              width={1400}
               height={1000}
             >
               <p style={{

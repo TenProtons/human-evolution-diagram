@@ -246,7 +246,7 @@ export const cardsData = [
       whoAroseFromHimKey: 'homo_floresiensis.who_arose_from_him',
       imgPath: homoАloresiensisImg,
       imgSource: 'https://www.worldhistory.org/image/6740/homo-floresiensis-reconstruction/',
-      infoSource: 'https://en.wikipedia.org/wiki/Homo_floresiensis',
+      infoSource: 'https://www.nature.com/articles/s41467-024-50649-7',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -338,7 +338,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: 'homo_denisovensis.did_he_come_out_of_Africa',
       imgPath: homoDenisovensislImg,
       imgSource: 'https://www.wsj.com/articles/a-short-history-of-humanity-review-lost-cousins-11618004888',
-      infoSource: 'https://en.wikipedia.org/wiki/Homo_denisova',
+      infoSource: 'https://www.science.org/content/article/ancient-dna-puts-face-mysterious-denisovans-extinct-cousins-neanderthals',
       imgAuthor: '',
       handleOptions: {
         top:{
@@ -360,6 +360,7 @@ export const cardsData = [
       didHeComeOutOfAfricaKey: null,
       imgPath: questionMarkImg,
       infoSource: '',
+      imgSource: '',
       imgAuthor: '',
       handleOptions: {
         top:{
