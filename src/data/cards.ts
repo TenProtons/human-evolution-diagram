@@ -65,7 +65,7 @@ export const cardsData = [
   },
   {
     id: '102',
-    position: { x: 1850, y: timelineLines.homo_erectus__panGenus.y },
+    position: { x: 1850, y: timelineLines.panGenus.y },
     data: {
       labelKey: 'panGenus.title',
       latinNameKey: 'panGenus.latin_name',
@@ -211,7 +211,7 @@ export const cardsData = [
   },
   {
     id: '108',
-    position: { x: -600, y: timelineLines.homo_erectus__panGenus.y},
+    position: { x: -600, y: timelineLines.homo_erectus.y},
     data: {
       labelKey: 'homo_erectus.title',
       latinNameKey: 'homo_erectus.latin_name',
