@@ -41,3 +41,42 @@ export interface MyEdgeData {
   labelBgPadding?: [number, number];
   labelBgBorderRadius?: number;
 }
+
+
+// Define TypeScript interfaces for better type safety
+export interface CardPosition {
+  x: number;
+  y: number;
+}
+
+export interface HandleOption {
+  type: 'source' | 'target';
+  position: 'top' | 'bottom' | 'left' | 'right';
+}
+
+export interface HandleOptions {
+  top?: HandleOption;
+  bottom?: HandleOption;
+  left?: HandleOption;
+  right?: HandleOption;
+}
+
+export interface CardData {
+  labelKey: string;
+  latinNameKey: string;
+  dateOfOriginKey: string;
+  whoDidItComeFromKey: string;
+  whoAroseFromHimKey?: string;
+  didHeComeOutOfAfricaKey?: string | null;
+  imgPath: string;
+  imgSource: string;
+  infoSource: string;
+  imgAuthor: string;
+  handleOptions: HandleOptions;
+}
+
+export interface Card {
+  id: string;
+  position: CardPosition;
+  data: CardData;
+}

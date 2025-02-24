@@ -7,14 +7,15 @@ import sahelanthropusImg from '../assets/img/sahelanthropus.jpg';
 import australopithecusAfarensisImg from '../assets/img/australopithecus-afarensis.jpg';
 import homoHabilisImg from '../assets/img/homo-habilis.jpg';
 import homoErectusImg from '../assets/img/homo-erectus.jpg';
-import homoАloresiensisImg from '../assets/img/homo-floresiensis.jpg';
+import homoFloresiensisImg from '../assets/img/homo-floresiensis.jpg';
 import homoHeidelbergensisImg from '../assets/img/homo-heidelbergensis.jpg';
-import homoІapiensImg from '../assets/img/homo-sapiens.jpg';
+import homoSapiensImg from '../assets/img/homo-sapiens.jpg';
 import neanderthalImg from '../assets/img/neanderthal.jpg';
-import homoDenisovensislImg from '../assets/img/homo-denisovensis.jpg';
+import homoDenisovensisImg from '../assets/img/homo-denisovensis.jpg';
 import { timelineLines } from './timelineLines';
+import { Card } from '../models/common';
 
-export const cardsData = [
+export const cardsData: Card[] = [
   {
     id: '100',
     position: { x: 600, y: timelineLines.chlca.y },
@@ -244,7 +245,7 @@ export const cardsData = [
       dateOfOriginKey: 'homo_floresiensis.date_of_origin',
       whoDidItComeFromKey: 'homo_floresiensis.who_did_it_come_from',
       whoAroseFromHimKey: 'homo_floresiensis.who_arose_from_him',
-      imgPath: homoАloresiensisImg,
+      imgPath: homoFloresiensisImg,
       imgSource: 'https://www.worldhistory.org/image/6740/homo-floresiensis-reconstruction/',
       infoSource: 'https://www.nature.com/articles/s41467-024-50649-7',
       imgAuthor: '',
@@ -292,7 +293,7 @@ export const cardsData = [
       whoDidItComeFromKey: 'homo_sapiens.who_did_it_come_from',
       whoAroseFromHimKey: 'homo_sapiens.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'homo_sapiens.did_he_come_out_of_Africa',
-      imgPath: homoІapiensImg,
+      imgPath: homoSapiensImg,
       imgSource: 'https://commons.wikimedia.org/wiki/File:Albert_Einstein_Head.jpg',
       infoSource: 'https://en.wikipedia.org/wiki/Homo_sapiens',
       imgAuthor: '',
@@ -336,7 +337,7 @@ export const cardsData = [
       whoDidItComeFromKey: 'homo_denisovensis.who_did_it_come_from',
       whoAroseFromHimKey: 'homo_denisovensis.who_arose_from_him',
       didHeComeOutOfAfricaKey: 'homo_denisovensis.did_he_come_out_of_Africa',
-      imgPath: homoDenisovensislImg,
+      imgPath: homoDenisovensisImg,
       imgSource: 'https://www.wsj.com/articles/a-short-history-of-humanity-review-lost-cousins-11618004888',
       infoSource: 'https://www.science.org/content/article/ancient-dna-puts-face-mysterious-denisovans-extinct-cousins-neanderthals',
       imgAuthor: '',
