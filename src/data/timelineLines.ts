@@ -1,4 +1,3 @@
-// timelineLines.ts
 export const timelineLines = {
   "60 mln": { y: -12000, text: "", label: "60" },
   "55 mln": { y: -11000, text: "", label: "55" },

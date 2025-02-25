@@ -3,11 +3,10 @@ import { Position } from "reactflow";
 
 export interface MyNodeData {
   index?: number;
-  // 'id' not needed if you're passing it to Node
-  label?: string;            // optional
-  latinName?: string;        // optional
-  dateOfOrigin?: string;     // optional
-  whoDidItComeFrom?: string; // optional
+  label?: string;           
+  latinName?: string;       
+  dateOfOrigin?: string;    
+  whoDidItComeFrom?: string;
   whoAroseFromHim?: string;
   didHeComeOutOfAfrica?: string;
   imgPath?: string;
@@ -42,8 +41,6 @@ export interface MyEdgeData {
   labelBgBorderRadius?: number;
 }
 
-
-// Define TypeScript interfaces for better type safety
 export interface CardPosition {
   x: number;
   y: number;
